@@ -8,12 +8,22 @@ class GudangModel extends Model
 {
     protected $table = 'gudang';
     protected $primaryKey = 'id_gudang';
-    protected $allowedFields = ['nama_gudang', 'tipe_gudang'];
 
+    /**
+     * Mengambil semua gudang untuk dropdown filter.
+     */
+    public function getGudangList()
+    {
+        return $this->orderBy('nama_gudang', 'ASC')->findAll();
+    }
+
+    /**
+     * Mengambil gudang yang bertipe 'Produksi'.
+     */
     public function getGudangProduksi()
     {
         return $this->where('tipe_gudang', 'Produksi')
-                   ->orderBy('nama_gudang')
-                   ->findAll();
+                    ->orderBy('nama_gudang', 'ASC')
+                    ->findAll();
     }
 }

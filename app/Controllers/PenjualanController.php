@@ -5,90 +5,98 @@ namespace App\Controllers;
 use App\Models\PenjualanModel;
 use App\Models\GudangModel;
 use App\Models\ProdukModel;
+use App\Models\StokModel;
 
 class PenjualanController extends BaseController
 {
     protected $penjualanModel;
     protected $gudangModel;
     protected $produkModel;
+    protected $stokModel;
 
     public function __construct()
     {
         $this->penjualanModel = new PenjualanModel();
         $this->gudangModel = new GudangModel();
         $this->produkModel = new ProdukModel();
+        $this->stokModel = new StokModel();
     }
 
-    public function index()
+    public function input()
     {
         $data = [
-            'gudang_list' => $this->gudangModel->orderBy('nama_gudang', 'ASC')->findAll(),
-            'produk_list' => $this->produkModel->orderBy('nama_produk', 'ASC')->findAll()
+            'page_title' => 'Form Input Penjualan',
+            'gudang_list' => $this->gudangModel->getGudangList(),
+            'produk_list' => $this->produkModel->getProdukList(),
         ];
-
         return view('penjualan/form', $data);
     }
+    
+    public function riwayat()
+    {
+        $data = [
+            'page_title'    => 'Riwayat Penjualan',
+            'gudang_list'   => $this->gudangModel->getGudangList(),
+            'produk_list'   => $this->produkModel->getProdukList(),
+            'tgl_mulai'     => $this->request->getGet('tanggal_mulai') ?? date('Y-m-01'),
+            'tgl_akhir'     => $this->request->getGet('tanggal_akhir') ?? date('Y-m-t'),
+        ];
+        return view('penjualan/riwayat', $data);
+    }
+
+    // --- Kumpulan Metode untuk AJAX ---
 
     public function getProdukInfo()
     {
-        $idProduk = (int)$this->request->getGet('id_produk');
-        
-        $produk = $this->produkModel->find($idProduk);
-        $info = $produk ? [
-            'satuan_per_dus' => $produk['satuan_per_dus'],
-            'nama_produk' => $produk['nama_produk']
-        ] : [
-            'satuan_per_dus' => 1,
-            'nama_produk' => ''
-        ];
-
-        return $this->response->setJSON($info);
+        $id_produk = $this->request->getGet('id_produk');
+        $info = $this->produkModel->find($id_produk);
+        return $this->response->setJSON($info ?? ['satuan_per_dus' => 1]);
     }
-
-    public function getCurrentStock()
+    
+    public function getStokPadaTanggal()
     {
-        $idGudang = (int)$this->request->getGet('id_gudang');
-        $idProduk = (int)$this->request->getGet('id_produk');
-
-        $db = \Config\Database::connect();
-        $query = "SELECT jumlah_dus, jumlah_satuan FROM stok_produk WHERE id_gudang = ? AND id_produk = ?";
-        $result = $db->query($query, [$idGudang, $idProduk]);
-        $stok = $result->getRowArray() ?? ['jumlah_dus' => 0, 'jumlah_satuan' => 0];
-
+        $id_produk = (int)$this->request->getGet('id_produk');
+        $id_gudang = (int)$this->request->getGet('id_gudang');
+        $tanggal = $this->request->getGet('tanggal');
+        if (empty($id_produk) || empty($id_gudang) || empty($tanggal)) {
+            return $this->response->setJSON(['dus' => 0, 'satuan' => 0]);
+        }
+        $stok = $this->stokModel->getHistoricalStock($id_produk, $id_gudang, $tanggal);
         return $this->response->setJSON($stok);
     }
-
-    public function getCustomerHistory()
+    
+    public function simpan()
     {
-        $customer = $this->request->getGet('customer') ?? '';
-        $history = $this->penjualanModel->getCustomerHistory($customer);
-        
-        return $this->response->setJSON($history);
+        $data = $this->request->getPost();
+        $result = $this->penjualanModel->simpanPenjualan($data);
+        return $this->response->setJSON($result);
     }
 
-    public function save()
+    public function filterRiwayat()
     {
-        try {
-            $data = [
-                'no_surat_jalan' => $this->request->getPost('no_surat_jalan'),
-                'customer' => $this->request->getPost('customer'),
-                'tanggal' => $this->request->getPost('tanggal'),
-                'pelat_mobil' => $this->request->getPost('pelat_mobil'),
-                'items' => $this->request->getPost('items')
-            ];
+        $filters = $this->request->getPost();
+        $data['report_data'] = $this->penjualanModel->getRiwayat($filters);
+        return view('penjualan/riwayat_ajax_table', $data);
+    }
+    
+    public function getDetailRiwayat()
+    {
+        $id = $this->request->getPost('id');
+        $detail = $this->penjualanModel->getDetail($id);
+        return $this->response->setJSON(['success' => true, 'data' => $detail]);
+    }
 
-            if (empty($data['items'])) {
-                throw new \Exception("Harap tambahkan minimal satu item produk.");
-            }
-
-            $result = $this->penjualanModel->savePenjualan($data);
-            return $this->response->setJSON($result);
-
-        } catch (\Exception $e) {
-            return $this->response->setStatusCode(400)->setJSON([
-                'success' => false,
-                'message' => 'Transaksi Gagal: ' . $e->getMessage()
-            ]);
-        }
+    public function updateRiwayat()
+    {
+        $data = $this->request->getPost();
+        $result = $this->penjualanModel->updatePenjualan($data);
+        return $this->response->setJSON($result);
+    }
+    
+    public function hapusRiwayat()
+    {
+        $id = $this->request->getPost('id');
+        $result = $this->penjualanModel->hapusPenjualan($id);
+        return $this->response->setJSON($result);
     }
 }

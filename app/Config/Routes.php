@@ -10,18 +10,40 @@ $routes->get('/', 'DashboardController::index');
 // Dashboard routes
 $routes->get('dashboard', 'DashboardController::index');
 
-// Pengemasan routes
-$routes->get('pengemasan', 'PengemasanController::index');
-$routes->post('pengemasan/save', 'PengemasanController::save');
-$routes->get('pengemasan/get-produksi-types', 'PengemasanController::getProduksiTypes');
-$routes->get('pengemasan/get-machines', 'PengemasanController::getMachines');
+// File: app/Config/Routes.php (Versi Baru)
+
+$routes->group('pengemasan', static function ($routes) {
+    $routes->get('/', 'PengemasanController::index');
+    $routes->get('riwayat', 'PengemasanController::riwayat');
+
+    // AJAX Routes
+    $routes->get('getgudang', 'PengemasanController::getGudang');
+    $routes->get('getjenisproduksi', 'PengemasanController::getJenisProduksi');
+    $routes->get('getmesin', 'PengemasanController::getMesin');
+    $routes->get('getinfoproduksi', 'PengemasanController::getInfoProduksi');
+
+    $routes->post('simpan', 'PengemasanController::simpan');
+    $routes->post('filterriwayat', 'PengemasanController::filterRiwayat');
+    $routes->post('getdetailriwayat', 'PengemasanController::getDetailRiwayat');
+    $routes->post('updateriwayat', 'PengemasanController::updateRiwayat');
+    $routes->post('hapusRiwayat', 'PengemasanController::hapusRiwayat');
+});
 
 // Penjualan routes
-$routes->get('penjualan', 'PenjualanController::index');
-$routes->post('penjualan/save', 'PenjualanController::save');
-$routes->get('penjualan/get-produk-info', 'PenjualanController::getProdukInfo');
-$routes->get('penjualan/get-current-stock', 'PenjualanController::getCurrentStock');
-$routes->get('penjualan/get-customer-history', 'PenjualanController::getCustomerHistory');
+$routes->group('penjualan', ['namespace' => 'App\Controllers'], static function ($routes) {
+    $routes->get('input', 'PenjualanController::input');
+    $routes->get('riwayat', 'PenjualanController::riwayat');
+    
+    // Rute untuk AJAX
+    $routes->get('getprodukinfo', 'PenjualanController::getProdukInfo');
+    $routes->get('getstokpadatanggal', 'PenjualanController::getStokPadaTanggal');
+    $routes->get('getcustomerhistory', 'PenjualanController::getCustomerHistory');
+    $routes->post('simpan', 'PenjualanController::simpan');
+    $routes->post('filterriwayat', 'PenjualanController::filterRiwayat');
+    $routes->post('getdetailriwayat', 'PenjualanController::getDetailRiwayat');
+    $routes->post('updateriwayat', 'PenjualanController::updateRiwayat');
+    $routes->post('hapusriwayat', 'PenjualanController::hapusRiwayat');
+});
 
 // Operstock routes
 $routes->get('operstock', 'OperstockController::index');

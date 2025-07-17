@@ -1,0 +1,346 @@
+CRITICAL - 2025-07-17 01:46:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/navbar.php"
+[Method: GET, Route: pengemasan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/navbar.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 3 APPPATH\Views\layout\main.php(15): CodeIgniter\View\View->include('layout/navbar')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/form', [], true)
+ 8 APPPATH\Controllers\PengemasanController.php(33): view('pengemasan/form', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:03:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:03:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:03:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:04:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:05:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:05:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:05:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:06:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:06:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:06:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:06:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:06:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:07:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:07:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:08:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 02:09:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(108): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:26:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(110): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:27:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(110): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:28:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(110): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:29:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(110): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:31:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengemasan/riwayat_ajax_table.php"
+[Method: POST, Route: pengemasan/filterriwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pengemasan/riwayat_ajax_table.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pengemasan/riwayat_ajax_table', [], true)
+ 3 APPPATH\Controllers\PengemasanController.php(110): view('pengemasan/riwayat_ajax_table', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->filterRiwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:51:18 --> ErrorException: Undefined array key "jumlah_satuan"
+[Method: POST, Route: pengemasan/updateriwayat]
+in APPPATH\Models\PengemasanModel.php on line 126.
+ 1 APPPATH\Models\PengemasanModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_satuan"', 'D:\\BW\\CI4_pmg_kemas\\app\\Models\\PengemasanModel.php', 126)
+ 2 APPPATH\Controllers\PengemasanController.php(124): App\Models\PengemasanModel->updatePengemasan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->updateRiwayat()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 03:52:16 --> ErrorException: Undefined array key "jumlah_satuan"
+[Method: POST, Route: pengemasan/updateriwayat]
+in APPPATH\Models\PengemasanModel.php on line 126.
+ 1 APPPATH\Models\PengemasanModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_satuan"', 'D:\\BW\\CI4_pmg_kemas\\app\\Models\\PengemasanModel.php', 126)
+ 2 APPPATH\Controllers\PengemasanController.php(124): App\Models\PengemasanModel->updatePengemasan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->updateRiwayat()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-17 04:01:59 --> ErrorException: Undefined array key "jumlah_satuan"
+[Method: POST, Route: pengemasan/updateriwayat]
+in APPPATH\Models\PengemasanModel.php on line 126.
+ 1 APPPATH\Models\PengemasanModel.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_satuan"', 'D:\\BW\\CI4_pmg_kemas\\app\\Models\\PengemasanModel.php', 126)
+ 2 APPPATH\Controllers\PengemasanController.php(124): App\Models\PengemasanModel->updatePengemasan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->updateRiwayat()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-17 04:48:15 --> mysqli_sql_exception: Duplicate entry '1212' for key 'uk_surat_jalan' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pe...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\BW\CI4_pmg_kemas\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 D:\BW\CI4_pmg_kemas\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\BW\CI4_pmg_kemas\app\Models\PenjualanModel.php(35): CodeIgniter\Model->insert(Array)
+#8 D:\BW\CI4_pmg_kemas\app\Controllers\PenjualanController.php(71): App\Models\PenjualanModel->simpanPenjualan(Array)
+#9 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\PenjualanController->simpan()
+#10 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+#11 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#16 {main}

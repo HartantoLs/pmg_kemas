@@ -8,25 +8,66 @@ class ProdukModel extends Model
 {
     protected $table = 'produk';
     protected $primaryKey = 'id_produk';
-    protected $allowedFields = ['nama_produk', 'satuan_per_dus'];
 
-    public function getProdukInfo($idProduk)
+    /**
+     * Mengambil semua produk untuk dropdown filter.
+     */
+    public function getProdukList()
     {
-        $produk = $this->find($idProduk);
-        return $produk ? [
-            'satuan_per_dus' => $produk['satuan_per_dus'],
-            'nama_produk' => $produk['nama_produk']
-        ] : [
-            'satuan_per_dus' => 1,
-            'nama_produk' => ''
-        ];
+        return $this->orderBy('nama_produk', 'ASC')->findAll();
     }
 
-    public function getCurrentStock($idGudang, $idProduk)
+    /**
+     * Mengambil daftar jenis produksi dari tabel lama.
+     */
+    public function getJenisProduksi()
     {
-        $db = \Config\Database::connect();
-        $query = "SELECT jumlah_dus, jumlah_satuan FROM stok_produk WHERE id_gudang = ? AND id_produk = ?";
-        $result = $db->query($query, [$idGudang, $idProduk]);
-        return $result->getRowArray() ?? ['jumlah_dus' => 0, 'jumlah_satuan' => 0];
+        return $this->db->table('tbl_jenis_produksi')
+            ->select('nom_jenis_produksi, jenis_produksi')
+            ->orderBy('jenis_produksi', 'DESC')
+            ->get()->getResultArray();
+    }
+
+    /**
+     * Mengambil info resep dan unit produk berdasarkan nom_jenis.
+     */
+    public function getInfoProduksi(int $nom_jenis)
+    {
+        $response = ['bahan_baku' => [], 'unit_label' => 'Dus'];
+        if ($nom_jenis <= 0) {
+            return $response;
+        }
+
+        $response['bahan_baku'] = $this->db->table('tbl_rinci_jenis_produksi r')
+            ->select('b.nama_barang, r.jumlah')
+            ->join('tbl_barang b', 'r.kode_barang = b.kode_barang')
+            ->where('r.nom_jenis_produksi', $nom_jenis)
+            ->get()->getResultArray();
+
+        $data_unit = $this->db->table('produk p')
+            ->select('p.satuan_per_dus')
+            ->join('tbl_jenis_produksi j', 'p.nama_produk = j.group_jenis_produksi')
+            ->where('j.nom_jenis_produksi', $nom_jenis)
+            ->get()->getRowArray();
+            
+        if ($data_unit && (int)$data_unit['satuan_per_dus'] <= 1) {
+            $response['unit_label'] = 'Satuan';
+        }
+
+        return $response;
+    }
+
+    /**
+     * Mengambil daftar mesin berdasarkan lokasi gudang dari tabel lama.
+     */
+    public function getMesinByGudang(string $nama_gudang)
+    {
+        if (empty($nama_gudang)) return [];
+        return $this->db->table('tbl_supcus')
+            ->select('kode_supcus, nama_supcus')
+            ->where('jenis', 'Mesin')
+            ->where('lokasi', $nama_gudang)
+            ->orderBy('nama_supcus', 'ASC')
+            ->get()->getResultArray();
     }
 }

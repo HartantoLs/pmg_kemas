@@ -2,99 +2,133 @@
 
 namespace App\Controllers;
 
-use App\Models\GudangModel;
-use App\Models\ProduksiModel;
-use App\Models\MesinModel;
 use App\Models\PengemasanModel;
+use App\Models\GudangModel;
+use App\Models\ProdukModel;
 
 class PengemasanController extends BaseController
 {
-    protected $gudangModel;
-    protected $produksiModel;
-    protected $mesinModel;
     protected $pengemasanModel;
+    protected $gudangModel;
+    protected $produkModel;
 
+    /**
+     * Konstruktor untuk menginisialisasi model.
+     */
     public function __construct()
     {
-        $this->gudangModel = new GudangModel();
-        $this->produksiModel = new ProduksiModel();
-        $this->mesinModel = new MesinModel();
         $this->pengemasanModel = new PengemasanModel();
+        $this->gudangModel = new GudangModel();
+        $this->produkModel = new ProdukModel();
     }
 
+    /**
+     * Menampilkan halaman form input pengemasan.
+     */
     public function index()
     {
-        return view('pengemasan/form');
+        $data = [
+            'page_title' => 'Input Hasil Pengemasan'
+        ];
+        return view('pengemasan/form', $data);
     }
+
+    /**
+     * Menampilkan halaman riwayat pengemasan.
+     */
+    public function riwayat()
+    {
+        $data = [
+            'page_title'    => 'Riwayat Pengemasan',
+            'tgl_mulai'     => $this->request->getGet('tanggal_mulai') ?? date('Y-m-01'),
+            'tgl_akhir'     => $this->request->getGet('tanggal_akhir') ?? date('Y-m-t'),
+            'gudang_list'   => $this->gudangModel->getGudangList(),
+            'produk_list'   => $this->produkModel->getProdukList()
+        ];
+        return view('pengemasan/riwayat', $data);
+    }
+
+    // --- Kumpulan Metode untuk AJAX ---
 
     public function getGudang()
     {
-        $gudangList = $this->gudangModel->getGudangProduksi();
+        $gudang = $this->gudangModel->getGudangProduksi();
         $options = "<option value=''>-- Pilih Gudang --</option>";
-        
-        foreach ($gudangList as $gudang) {
-            $options .= "<option value='" . esc($gudang['id_gudang']) . "' data-nama-gudang='" . esc($gudang['nama_gudang']) . "'>" . esc($gudang['nama_gudang']) . "</option>";
+        foreach ($gudang as $row) {
+            $options .= "<option value='" . esc($row['id_gudang']) . "' data-nama-gudang='" . esc($row['nama_gudang']) . "'>" . esc($row['nama_gudang']) . "</option>";
         }
-        
-        return $this->response->setContentType('text/html')->setBody($options);
+        return $this->response->setBody($options);
     }
 
     public function getJenisProduksi()
     {
-        $jenisList = $this->produksiModel->getJenisProduksi();
+        $jenis = $this->produkModel->getJenisProduksi();
         $options = "<option value=''>-- Pilih Jenis Produksi --</option>";
-        
-        foreach ($jenisList as $jenis) {
-            $options .= "<option value='{$jenis['nom_jenis_produksi']}'>{$jenis['jenis_produksi']}</option>";
+        foreach ($jenis as $d) {
+            $options .= "<option value='{$d['nom_jenis_produksi']}'>{$d['jenis_produksi']}</option>";
         }
-        
-        return $this->response->setContentType('text/html')->setBody($options);
+        return $this->response->setBody($options);
     }
 
     public function getMesin()
     {
-        $namaGudang = $this->request->getGet('nama_gudang');
+        $nama_gudang = $this->request->getGet('nama_gudang') ?? '';
+        $mesin = $this->produkModel->getMesinByGudang($nama_gudang);
         $options = '<option value="">-- Pilih Mesin --</option>';
-        
-        if (!empty($namaGudang)) {
-            $mesinList = $this->mesinModel->getMesinByLokasi($namaGudang);
-            foreach ($mesinList as $mesin) {
-                $options .= "<option value='" . esc($mesin['kode_supcus']) . "'>" . esc($mesin['nama_supcus']) . "</option>";
-            }
+        foreach ($mesin as $row) {
+            $options .= "<option value='" . esc($row['kode_supcus']) . "'>" . esc($row['nama_supcus']) . "</option>";
         }
-        
-        return $this->response->setContentType('text/html')->setBody($options);
+        return $this->response->setBody($options);
     }
-
+    
     public function getInfoProduksi()
     {
-        $nomJenisProduksi = $this->request->getGet('nom_jenis_produksi');
-        $response = ['bahan_baku' => [], 'unit_label' => 'Dus'];
-        
-        if ($nomJenisProduksi > 0) {
-            $response = $this->produksiModel->getInfoProduksi($nomJenisProduksi);
-        }
-        
-        return $this->response->setJSON($response);
+        $nom_jenis = $this->request->getGet('nom_jenis_produksi') ?? 0;
+        $data = $this->produkModel->getInfoProduksi($nom_jenis);
+        return $this->response->setJSON($data);
+    }
+    
+    public function simpan()
+    {
+        if (!$this->request->isAJAX()) return redirect()->to('/pengemasan');
+        $data = $this->request->getPost();
+        $result = $this->pengemasanModel->simpanPengemasan($data);
+        return $this->response->setJSON($result);
     }
 
-    public function save()
+    public function filterRiwayat()
     {
-        try {
-            $data = [
-                'tanggal' => $this->request->getPost('tTanggal'),
-                'shift' => $this->request->getPost('tShift'),
-                'items' => $this->request->getPost('items')
-            ];
+        $data = [
+            'tgl_mulai' => $this->request->getPost('tanggal_mulai'),
+            'tgl_akhir' => $this->request->getPost('tanggal_akhir'),
+            'gudang_id' => $this->request->getPost('gudang_id'),
+            'produk_id' => $this->request->getPost('produk_id')
+        ];
+        // Memanggil fungsi getRiwayat di model
+        $riwayatData = $this->pengemasanModel->getRiwayat($data); 
+        // Mengirim data ke view partial dengan nama variabel 'report_data'
+        return view('pengemasan/riwayat_ajax_table', ['report_data' => $riwayatData]);
+    }
 
-            $result = $this->pengemasanModel->savePengemasan($data);
-            return $this->response->setJSON($result);
+    public function getDetailRiwayat()
+    {
+        $id = $this->request->getPost('id');
+        $result = $this->pengemasanModel->getDetailRiwayat($id);
+        if ($result) return $this->response->setJSON(['success' => true, 'data' => $result]);
+        return $this->response->setStatusCode(404)->setJSON(['success' => false, 'message' => 'Data tidak ditemukan.']);
+    }
 
-        } catch (\Exception $e) {
-            return $this->response->setStatusCode(400)->setJSON([
-                'status' => 'error',
-                'message' => 'Gagal menyimpan data: ' . $e->getMessage()
-            ]);
-        }
+    public function updateRiwayat()
+    {
+        $data = $this->request->getPost();
+        $result = $this->pengemasanModel->updatePengemasan($data);
+        return $this->response->setJSON($result);
+    }
+    
+    public function hapusRiwayat()
+    {
+        $id = $this->request->getPost('id');
+        $result = $this->pengemasanModel->hapusPengemasan($id);
+        return $this->response->setJSON($result);
     }
 }

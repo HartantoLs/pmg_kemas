@@ -1,0 +1,78 @@
+@import url('global.css');
+
+.navbar.fixed-top {
+    background: linear-gradient(135deg, #F97316, #EA580C);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0; 
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .navbar-brand {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+.navbar .nav-link {
+    font-size: 1.05rem;
+    padding: 0.75rem 1.25rem !important; 
+    border-radius: 8px;
+    margin: 0 0.25rem;
+}
+
+.navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; 
+    transform: translateY(-2px);
+}
+
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar .dropdown-menu {
+ 
+    background: rgba(30, 30, 30, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    border-radius: 16px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    margin-top: 1rem;
+    padding: 0.75rem;
+}
+
+.navbar .dropdown-item {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+}
+
+.navbar .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.navbar .dropdown-item:active {
+    background: var(--primary-orange);
+    color: white;
+}
+
+.navbar .dropdown-item i.fa-fw {
+    width: 1.25em; 
+    opacity: 0.7;
+}
