@@ -1,0 +1,694 @@
+CRITICAL - 2025-07-09 04:37:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/kartu_stok.php"
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/kartu_stok.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/kartu_stok', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(51): view('laporan/kartu_stok', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:37:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/perbandingan.php"
+[Method: GET, Route: laporan/perbandingan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/perbandingan.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/perbandingan', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(129): view('laporan/perbandingan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->perbandingan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:37:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/kartu_stok.php"
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/kartu_stok.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/kartu_stok', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(51): view('laporan/kartu_stok', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:40:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/kartu_stok.php"
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/kartu_stok.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/kartu_stok', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(51): view('laporan/kartu_stok', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:40:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/kartu_stok.php"
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/kartu_stok.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/kartu_stok', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(51): view('laporan/kartu_stok', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:40:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/kartu_stok.php"
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/kartu_stok.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/kartu_stok', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(51): view('laporan/kartu_stok', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-09 04:41:16 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 04:41:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:41:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:41:17 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-09 04:41:27 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('14', '2', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 04:41:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('14', '2', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:41:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'14\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'14\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('14', '2', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 04:41:27 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'14\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'14\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'14\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('14', '2', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-09 05:06:26 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('2', '1', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 05:06:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('2', '1', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:06:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'2\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'2\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('2', '1', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:06:26 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'2\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'2\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'2\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('2', '1', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-09 05:19:16 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', '1', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 05:19:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', '1', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', '1', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:16 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'
+AND `pd`.`gudang_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:
+AND `pd`.`gudang_id` = :pd.gudang_id:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', '1', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-09 05:19:22 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 05:19:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:22 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:33 --> ErrorException: Cannot redeclare formatStok() (previously declared in D:\BW\CI4_pmg_kemas\app\Views\Laporan\mutasi.php:519)
+[Method: GET, Route: laporan/mutasi]
+in APPPATH\Views\Laporan\mutasi.php on line 519.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-07-09 05:19:57 --> mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.t...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.t...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.t...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.t...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-09 05:19:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+[Method: GET, Route: laporan/kartu-stok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-09 05:19:57 --> [Caused by] mysqli_sql_exception: Unknown column '-pd.jumlah_dus' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = \'17\'
+AND DATE(p.tanggal) >= \'2025-07-01\'
+AND DATE(p.tanggal) <= \'2025-07-31\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT DATE(p.tanggal) as tanggal_transaksi, `pd`.`gudang_id`, \'Penjualan\' as tipe_transaksi, `-pd`.`jumlah_dus` as `perubahan_dus`, `-pd`.`jumlah_satuan` as `perubahan_satuan`
+FROM `penjualan` `p`
+JOIN `penjualan_detail` `pd` ON `p`.`id` = `pd`.`penjualan_id`
+WHERE `pd`.`produk_id` = :pd.produk_id:
+AND DATE(p.tanggal) >= :DATE(p.tanggal):
+AND DATE(p.tanggal) <= :DATE(p.tanggal).1:', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(143): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(47): App\Models\LaporanModel->getKartuStok('17', 'semua', '2025-07-01', '2025-07-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->kartuStok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')

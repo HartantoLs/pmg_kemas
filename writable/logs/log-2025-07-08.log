@@ -1,0 +1,14 @@
+CRITICAL - 2025-07-08 07:17:57 --> CodeIgniter\Exceptions\ModelException: "App\Models\StokModel" model class does not specify a Primary Key.
+[Method: GET, Route: stok]
+in SYSTEMPATH\Model.php on line 704.
+ 1 SYSTEMPATH\Model.php(704): CodeIgniter\Exceptions\ModelException::forNoPrimaryKey('App\\Models\\StokModel')
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Stok.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Stok->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stok))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
