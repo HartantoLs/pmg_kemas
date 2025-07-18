@@ -1,0 +1,395 @@
+ERROR - 2025-07-18 02:33:23 --> mysqli_sql_exception: Table 'pmg_kemas.stok_opname' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(juml...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(juml...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(juml...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(juml...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-18 02:33:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pmg_kemas.stok_opname' doesn't exist
+[Method: GET, Route: laporan/mutasi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 02:33:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pmg_kemas.stok_opname' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 02:33:23 --> [Caused by] mysqli_sql_exception: Table 'pmg_kemas.stok_opname' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-18 02:39:09 --> mysqli_sql_exception: Table 'pmg_kemas.stok_opname' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(juml...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(juml...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(juml...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(juml...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-18 02:39:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'pmg_kemas.stok_opname' doesn't exist
+[Method: GET, Route: laporan/mutasi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 02:39:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'pmg_kemas.stok_opname' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 4 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 02:39:09 --> [Caused by] mysqli_sql_exception: Table 'pmg_kemas.stok_opname' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = \'15\'
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= \'2025-07\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(jumlah_dus_opname) as total_dus, SUM(jumlah_satuan_opname) as total_satuan
+FROM `stok_opname`
+WHERE `produk_id` = :produk_id:
+AND DATE_FORMAT(tanggal_opname, "%Y-%m") <= :DATE_FORMAT(tanggal_opname, "%Y-%m"):', [...], false)
+ 5 APPPATH\Models\LaporanModel.php(228): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\LaporanController.php(77): App\Models\LaporanModel->getMutasiStok('harian', '2025-07-18', '2025-07-01', '2025-07-31', 'semua', 'semua')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->mutasi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:32:16 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:32:32 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:33:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:33:22 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:33:32 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:33:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:33:36 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:34:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:34:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:34:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 10:34:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')

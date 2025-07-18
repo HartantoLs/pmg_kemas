@@ -70,4 +70,12 @@ class ProdukModel extends Model
             ->orderBy('nama_supcus', 'ASC')
             ->get()->getResultArray();
     }
+
+    public function getProdukInfo(int $produk_id)
+    {
+        if ($produk_id <= 0) {
+            return null;
+        }
+        return $this->find($produk_id);
+    }
 }

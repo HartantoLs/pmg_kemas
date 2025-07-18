@@ -26,7 +26,7 @@ $routes->group('pengemasan', static function ($routes) {
     $routes->post('filterriwayat', 'PengemasanController::filterRiwayat');
     $routes->post('getdetailriwayat', 'PengemasanController::getDetailRiwayat');
     $routes->post('updateriwayat', 'PengemasanController::updateRiwayat');
-    $routes->post('hapusRiwayat', 'PengemasanController::hapusRiwayat');
+    $routes->post('hapusriwayat', 'PengemasanController::hapusRiwayat');
 });
 
 // Penjualan routes
@@ -46,17 +46,43 @@ $routes->group('penjualan', ['namespace' => 'App\Controllers'], static function 
 });
 
 // Operstock routes
-$routes->get('operstock', 'OperstockController::index');
-$routes->post('operstock/save', 'OperstockController::save');
-$routes->get('operstock/get-both-stocks', 'OperstockController::getBothStocks');
-$routes->get('operstock/get-transfer-history', 'OperstockController::getTransferHistory');
+$routes->group('operstock', ['namespace' => 'App\Controllers'], static function ($routes) {
+    // Rute untuk menampilkan halaman
+    $routes->get('input', 'OperstockController::input');
+    $routes->get('riwayat', 'OperstockController::riwayat');
+        
+    // Rute untuk proses AJAX (semua huruf kecil)
+    $routes->get('getbothstocks', 'OperstockController::getBothStocks');
+    $routes->get('gettransferhistory', 'OperstockController::getTransferHistory');
+    $routes->get('getstock', 'OperstockController::getStock');
+    $routes->post('simpan', 'OperstockController::simpan');
+    $routes->post('filterriwayat', 'OperstockController::filterRiwayat');
+    $routes->post('getdetailriwayat', 'OperstockController::getDetailRiwayat');
+    $routes->post('updateriwayat', 'OperstockController::updateRiwayat');
+    $routes->post('hapusriwayat', 'OperstockController::hapusRiwayat');
+});
+
 
 // Operpack Kerusakan routes
-$routes->get('operpack-kerusakan', 'OperpackKerusakanController::index');
-$routes->post('operpack-kerusakan/save', 'OperpackKerusakanController::save');
-$routes->get('operpack-kerusakan/get-gudang-internal', 'OperpackKerusakanController::getGudangInternal');
-$routes->get('operpack-kerusakan/get-stok-produk', 'OperpackKerusakanController::getStokProduk');
-$routes->get('operpack-kerusakan/get-damage-history', 'OperpackKerusakanController::getDamageHistory');
+$routes->group('operpack_kerusakan', ['namespace' => 'App\Controllers'], static function ($routes) {
+    // Rute untuk menampilkan halaman
+    $routes->get('input', 'OperpackKerusakanController::form');
+    $routes->get('riwayat', 'OperpackKerusakanController::riwayat');
+        
+    // Rute untuk proses AJAX
+    $routes->get('getgudanginternal', 'OperpackKerusakanController::getGudangInternal');
+    $routes->get('getstokproduk', 'OperpackKerusakanController::getStokProduk');
+    $routes->get('getdamagehistory', 'OperpackKerusakanController::getDamageHistory');
+    $routes->get('validatepenjualan', 'OperpackKerusakanController::validatePenjualan');
+    $routes->get('getpenjualanproduk', 'OperpackKerusakanController::getPenjualanProduk');
+    $routes->post('simpan', 'OperpackKerusakanController::simpan');
+    $routes->post('filterriwayat', 'OperpackKerusakanController::filterRiwayat');
+    $routes->post('getdetailriwayat', 'OperpackKerusakanController::getDetailRiwayat');
+    $routes->post('updateriwayat', 'OperpackKerusakanController::updateRiwayat');
+    $routes->post('hapusriwayat', 'OperpackKerusakanController::hapusRiwayat');
+    $routes->post('getstock', 'OperpackKerusakanController::getStock');
+});
+
 
 // Seleksi routes
 $routes->get('seleksi', 'SeleksiController::index');

@@ -78,7 +78,24 @@ $(document).ready(function() {
 
                 $('#editStokInfo').text(`${stokTersediaSaatItu.dus} Dus, ${stokTersediaSaatItu.satuan} Satuan`);
                 validateEditInputs();
+
+                const satuanPerDus = parseInt(data.satuan_per_dus) || 0;
+                const dusInput = $('#editJumlahDus');
+                const satuanInput = $('#editJumlahSatuan');
+
+                // Reset status kunci dan styling
+                dusInput.prop('readonly', false).removeClass('input-locked');
+                satuanInput.prop('readonly', false).removeClass('input-locked');
+
+                if (satuanPerDus > 1) {
+                    // Kunci input SATUAN dan tambahkan kelas opacity
+                    satuanInput.prop('readonly', true).addClass('input-locked');
+                } else {
+                    // Kunci input DUS dan tambahkan kelas opacity
+                    dusInput.prop('readonly', true).addClass('input-locked');
+                }
                 modal.show();
+                
             } else {
                 showNotification(response.message || 'Gagal mengambil data detail.', 'error');
             }

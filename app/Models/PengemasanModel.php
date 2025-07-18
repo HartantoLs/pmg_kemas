@@ -91,7 +91,7 @@ class PengemasanModel extends Model
     public function getDetailRiwayat(int $id)
     {
         $data = $this->db->table('pengemasan pg')
-            ->select('pg.id, pg.tanggal, pg.produk_id, pg.gudang_id, pg.jumlah_dus, pg.jumlah_satuan, p.nama_produk, g.nama_gudang')
+            ->select('pg.id, pg.tanggal, pg.produk_id, pg.gudang_id, pg.jumlah_dus, pg.jumlah_satuan, p.nama_produk, g.nama_gudang, p.satuan_per_dus')
             ->join('produk p', 'pg.produk_id = p.id_produk')
             ->join('gudang g', 'pg.gudang_id = g.id_gudang')
             ->where('pg.id', $id)

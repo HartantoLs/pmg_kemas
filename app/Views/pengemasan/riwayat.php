@@ -11,6 +11,8 @@
         <p>Kelola dan pantau riwayat hasil produksi dan pengemasan</p>
     </div>
     
+    <div id="notification-toast" class="notification-toast"></div>
+
     <div class="filter-card">
         <div class="filter-header"><h3><i class="fas fa-filter"></i> Filter Data</h3></div>
         <form id="filterForm">
@@ -50,22 +52,25 @@
             <div class="table-title"><i class="fas fa-table"></i> Data Riwayat</div>
             <div class="table-stats">Total: <span id="totalRows">0</span> data</div>
         </div>
-        <div class="loading" id="loadingState"><i class="fas fa-spinner fa-spin fa-2x"></i> Memuat data...</div>
-        <table class="report-table" id="dataTable">
-            <thead>
-                <tr>
-                    <th><i class="fas fa-calendar"></i> Tanggal</th>
-                    <th><i class="fas fa-clock"></i> Shift</th>
-                    <th class="text-left"><i class="fas fa-cogs"></i> Mesin</th>
-                    <th class="text-left"><i class="fas fa-box"></i> Produk</th>
-                    <th><i class="fas fa-warehouse"></i> Gudang</th>
-                    <th><i class="fas fa-cubes"></i> Jml Dus</th>
-                    <th><i class="fas fa-cube"></i> Jml Satuan</th>
-                    <th><i class="fas fa-bolt"></i> Aksi</th>
-                </tr>
-            </thead>
-            <tbody id="dataTableBody"></tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="report-table" id="dataTable">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-calendar"></i> Tanggal</th>
+                        <th><i class="fas fa-clock"></i> Shift</th>
+                        <th class="text-left"><i class="fas fa-cogs"></i> Mesin</th>
+                        <th class="text-left"><i class="fas fa-box"></i> Produk</th>
+                        <th><i class="fas fa-warehouse"></i> Gudang</th>
+                        <th><i class="fas fa-cubes"></i> Jml Dus</th>
+                        <th><i class="fas fa-cube"></i> Jml Satuan</th>
+                        <th><i class="fas fa-bolt"></i> Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTableBody">
+                    <div class="loading" id="loadingState"><i class="fas fa-spinner fa-spin fa-2x"></i> Memuat data...</div>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
@@ -77,16 +82,15 @@
         </div>
         <div class="modal-body">
             <form id="editForm">
-                <input type="hidden" name="action" value="update_pengemasan">
-                <input type="hidden" id="editId" name="id">
+                <input type="hidden" name="id" id="editId">
                 
                 <div class="form-group"><label>Produk:</label><p id="editNamaProduk"></p></div>
                 <div class="form-group"><label>Gudang:</label><p id="editNamaGudang"></p></div>
                 
                 <div class="form-group info-box">
-                    <label><i class="fas fa-history"></i> Stok Pada Saat Transaksi</label>
+                    <label><i class="fas fa-history"></i> Stok Pada Saat Transaksi (Referensi)</label>
                     <p id="editStokInfo"></p>
-                    <small class="text-muted">*Perubahan nilai akan divalidasi agar stok saat ini tidak negatif.</small>
+                    <small class="text-muted">*Stok ini hanya sebagai referensi. Validasi akhir dilakukan oleh sistem.</small>
                 </div>
 
                 <div class="form-group">

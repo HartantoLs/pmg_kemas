@@ -198,3 +198,9 @@ body {
 }
 .modal-link-card .link-text strong { display: block; font-weight: 600; }
 .modal-link-card .link-text small { color: var(--text-gray); font-size: 0.8rem; }
+
+.input-locked {
+    background-color: #e9ecef !important; /* Warna abu-abu seperti input disabled */
+    opacity: 0.7;
+    cursor: not-allowed;
+}

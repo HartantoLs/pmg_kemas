@@ -92,7 +92,7 @@ class PenjualanModel extends Model
     public function getDetail(int $detail_id)
     {
         $data = $this->db->table('penjualan_detail pd')
-            ->select('pd.id, p.tanggal, pd.produk_id, pd.gudang_id, pd.jumlah_dus, pd.jumlah_satuan, pr.nama_produk, g.nama_gudang')
+            ->select('pd.id, p.tanggal, pd.produk_id, pd.gudang_id, pd.jumlah_dus, pd.jumlah_satuan, pr.nama_produk, g.nama_gudang, pr.satuan_per_dus')
             ->join('penjualan p', 'pd.penjualan_id = p.id')
             ->join('produk pr', 'pd.produk_id = pr.id_produk')
             ->join('gudang g', 'pd.gudang_id = g.id_gudang')
@@ -162,5 +162,44 @@ class PenjualanModel extends Model
             $this->db->transRollback();
             return ['success' => false, 'message' => 'Gagal: ' . $e->getMessage()];
         }
+    }
+    /**
+     * Mengambil data penjualan berdasarkan nomor surat jalan.
+     */
+    public function getPenjualanByNoSuratJalan(string $no_surat_jalan)
+    {
+        return $this->db->table('penjualan p')
+            ->select('p.id, p.no_surat_jalan, p.pelat_mobil, p.customer, p.tanggal')
+            ->where('p.no_surat_jalan', $no_surat_jalan)
+            ->get()->getRowArray();
+    }
+
+    /**
+     * Mengambil detail produk dari penjualan berdasarkan no surat jalan dan produk.
+     */
+    public function getProdukFromPenjualan(string $no_surat_jalan, int $produk_id)
+    {
+        return $this->db->table('penjualan p')
+            ->select('p.no_surat_jalan, p.customer, p.tanggal, pd.jumlah_dus, pd.jumlah_satuan, pr.nama_produk, pr.satuan_per_dus, g.nama_gudang')
+            ->join('penjualan_detail pd', 'p.id = pd.penjualan_id')
+            ->join('produk pr', 'pd.produk_id = pr.id_produk')
+            ->join('gudang g', 'pd.gudang_id = g.id_gudang')
+            ->where('p.no_surat_jalan', $no_surat_jalan)
+            ->where('pd.produk_id', $produk_id)
+            ->get()->getRowArray();
+    }
+
+    /**
+     * Mengambil semua produk dari penjualan berdasarkan no surat jalan.
+     */
+    public function getAllProdukFromPenjualan(string $no_surat_jalan)
+    {
+        return $this->db->table('penjualan p')
+            ->select('p.no_surat_jalan, p.customer, p.tanggal, pd.produk_id, pd.jumlah_dus, pd.jumlah_satuan, pr.nama_produk, pr.satuan_per_dus, g.nama_gudang')
+            ->join('penjualan_detail pd', 'p.id = pd.penjualan_id')
+            ->join('produk pr', 'pd.produk_id = pr.id_produk')
+            ->join('gudang g', 'pd.gudang_id = g.id_gudang')
+            ->where('p.no_surat_jalan', $no_surat_jalan)
+            ->get()->getResultArray();
     }
 }
