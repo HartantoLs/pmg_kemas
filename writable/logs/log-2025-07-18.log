@@ -393,3 +393,172 @@ in SYSTEMPATH\HTTP\URI.php on line 574.
 16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 05:56:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: operpack_seleksi/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('operpack_seleksi/form', [], true)
+ 4 APPPATH\Controllers\OperpackSeleksiController.php(29): view('operpack_seleksi/form', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackSeleksiController->form()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackSeleksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 05:56:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: operpack_seleksi/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('operpack_seleksi/form', [], true)
+ 4 APPPATH\Controllers\OperpackSeleksiController.php(29): view('operpack_seleksi/form', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackSeleksiController->form()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackSeleksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 05:57:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: operpack_seleksi/riwayat]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('operpack_seleksi/riwayat', [], true)
+ 4 APPPATH\Controllers\OperpackSeleksiController.php(39): view('operpack_seleksi/riwayat', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackSeleksiController->riwayat()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackSeleksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 06:17:32 --> Error: Class "App\Models\OperpackSeleksiModel" not found
+[Method: GET, Route: operpack_seleksi/input]
+in APPPATH\Controllers\OperpackSeleksiController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\OperpackSeleksiController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 06:28:35 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\OperpackSeleksiModel::getFilteredData
+[Method: POST, Route: operpack_seleksi/filter-data]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\OperpackSeleksiController.php(137): CodeIgniter\Model->__call('getFilteredData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackSeleksiController->filterData()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackSeleksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 13:51:20 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 13:51:20 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 13:51:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 08:16:07 --> ErrorException: Undefined variable $db
+[Method: POST, Route: operpack_kemas_ulang/simpan-repack]
+in APPPATH\Controllers\OperpackKemasUlangController.php on line 178.
+ 1 APPPATH\Controllers\OperpackKemasUlangController.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\BW\\CI4_pmg_kemas\\app\\Controllers\\OperpackKemasUlangController.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackKemasUlangController->simpanRepack()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackKemasUlangController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 15:19:02 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-18 08:20:19 --> ErrorException: Undefined variable $db
+[Method: POST, Route: operpack_kemas_ulang/simpan-repack]
+in APPPATH\Controllers\OperpackKemasUlangController.php on line 178.
+ 1 APPPATH\Controllers\OperpackKemasUlangController.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'D:\\BW\\CI4_pmg_kemas\\app\\Controllers\\OperpackKemasUlangController.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OperpackKemasUlangController->simpanRepack()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OperpackKemasUlangController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')

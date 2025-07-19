@@ -8,7 +8,7 @@
   // Daftar segmen URL yang termasuk dalam kategori 'Form Input'
   $form_input_segments = [
       'pengemasan', 'penjualan', 'operstock', 'operpack_kerusakan', 
-      'seleksi', 'kemas-ulang', 'stok-opname', 'fisik-harian', 'pengadaan'
+      'operpack_seleksi', 'kemas-ulang', 'stok-opname', 'fisik-harian', 'pengadaan'
   ];
   ?>
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -27,8 +27,8 @@
               <li><a class="dropdown-item" href="<?= site_url('penjualan/input') ?>"><i class="fa-solid fa-cart-arrow-down fa-fw"></i> Input Penjualan</a></li>
               <li><a class="dropdown-item" href="<?= site_url('operstock/input') ?>"><i class="fa-solid fa-right-left fa-fw"></i> Input Operstock</a></li>
               <li><a class="dropdown-item" href="<?= site_url('operpack_kerusakan/input') ?>"><i class="fa-solid fa-heart-crack fa-fw"></i> Input Overpack Kerusakan</a></li>
-              <li><a class="dropdown-item" href="<?= site_url('seleksi/input') ?>"><i class="fa-solid fa-clipboard-check fa-fw"></i> Input Seleksi</a></li>
-              <li><a class="dropdown-item" href="<?= site_url('kemas_ulang/input') ?>"><i class="fa-solid fa-box-open fa-fw"></i> Input Kemas Ulang</a></li>
+              <li><a class="dropdown-item" href="<?= site_url('operpack_seleksi/input') ?>"><i class="fa-solid fa-clipboard-check fa-fw"></i> Input Seleksi</a></li>
+              <li><a class="dropdown-item" href="<?= site_url('operpack_kemas_ulang/input') ?>"><i class="fa-solid fa-box-open fa-fw"></i> Input Kemas Ulang</a></li>
               <li><a class="dropdown-item" href="<?= site_url('fisik_harian/input') ?>"><i class="fa-solid fa-clipboard-list fa-fw"></i> Input Fisik Harian</a></li>
               <li><a class="dropdown-item" href="<?= site_url('stok_opname/input') ?>"><i class="fa-solid fa-warehouse fa-fw"></i> Input Stok Opname</a></li>
             </ul>
@@ -52,8 +52,8 @@
               <li><a class="dropdown-item" href="<?= site_url('penjualan/riwayat') ?>"><i class="fa-solid fa-receipt fa-fw"></i> Riwayat Penjualan</a></li>
               <li><a class="dropdown-item" href="<?= site_url('operstock/riwayat') ?>"><i class="fa-solid fa-truck-ramp-box fa-fw"></i> Riwayat Operstock</a></li>
               <li><a class="dropdown-item" href="<?= site_url('operpack_kerusakan/riwayat') ?>"><i class="fa-solid fa-screwdriver-wrench fa-fw"></i> Riwayat Overpack</a></li>
-              <li><a class="dropdown-item" href="<?= site_url('seleksi/riwayat') ?>"><i class="fa-solid fa-check-double fa-fw"></i> Riwayat Seleksi</a></li>
-              <li><a class="dropdown-item" href="<?= site_url('kemas_ulang/riwayat') ?>"><i class="fa-solid fa-boxes-packing fa-fw"></i> Riwayat Kemas Ulang</a></li>
+              <li><a class="dropdown-item" href="<?= site_url('operpack_seleksi/riwayat') ?>"><i class="fa-solid fa-check-double fa-fw"></i> Riwayat Seleksi</a></li>
+              <li><a class="dropdown-item" href="<?= site_url('operpack_kemas_ulang/riwayat') ?>"><i class="fa-solid fa-boxes-packing fa-fw"></i> Riwayat Kemas Ulang</a></li>
             </ul>
           </li>
         </ul>

@@ -84,19 +84,45 @@ $routes->group('operpack_kerusakan', ['namespace' => 'App\Controllers'], static 
 });
 
 
-// Seleksi routes
-$routes->get('seleksi', 'SeleksiController::index');
-$routes->post('seleksi/save', 'SeleksiController::save');
-$routes->get('seleksi/get-stok-seleksi', 'SeleksiController::getStokSeleksi');
+// Operpack Seleksi Routes
+$routes->group('operpack_seleksi', function($routes) {
+    $routes->get('input', 'OperpackSeleksiController::form');
+    $routes->get('riwayat', 'OperpackSeleksiController::riwayat');
+    $routes->get('get-stok-seleksi', 'OperpackSeleksiController::getStokSeleksi');
+    $routes->post('simpan-seleksi', 'OperpackSeleksiController::simpanSeleksi');
+    $routes->post('filter-data', 'OperpackSeleksiController::filterData');
+    $routes->post('get-detail', 'OperpackSeleksiController::getDetail');
+    $routes->post('update-seleksi', 'OperpackSeleksiController::updateSeleksi');
+    $routes->post('delete-seleksi', 'OperpackSeleksiController::deleteSeleksi');
+});
 
-// Kemas Ulang routes
-$routes->get('kemas-ulang', 'KemasUlangController::index');
-$routes->post('kemas-ulang/save', 'KemasUlangController::save');
-$routes->get('kemas-ulang/get-stok-repack', 'KemasUlangController::getStokRepack');
 
-// Stok Opname routes
-$routes->get('stok-opname', 'StokOpnameController::index');
-$routes->post('stok-opname/save', 'StokOpnameController::save');
+// Operpack Kemas Ulang Routes
+$routes->group('operpack_kemas_ulang', function($routes) {
+    $routes->get('input', 'OperpackKemasUlangController::input');
+    $routes->get('riwayat', 'OperpackKemasUlangController::riwayat');
+    $routes->get('get-stok-repack', 'OperpackKemasUlangController::getStokRepack');
+    $routes->post('simpan-repack', 'OperpackKemasUlangController::simpanRepack');
+    $routes->post('filter-data', 'OperpackKemasUlangController::filterData');
+    $routes->post('get-detail', 'OperpackKemasUlangController::getDetail');
+    $routes->post('update-kemas-ulang', 'OperpackKemasUlangController::updateKemasUlang');
+    $routes->post('delete-kemas-ulang', 'OperpackKemasUlangController::deleteKemasUlang');
+});
+
+// Stok Awal Bulan Routes
+$routes->group('stok_awal_bulan', function($routes) {
+    $routes->get('form', 'StokAwalBulanController::form');
+    $routes->post('calculateBeginningStock', 'StokAwalBulanController::calculateBeginningStock');
+    $routes->post('saveOpname', 'StokAwalBulanController::saveOpname');
+});
+
+// Fisik Harian Routes
+$routes->group('fisik_harian', function($routes) {
+    $routes->get('form', 'FisikHarianController::form');
+    $routes->get('riwayat', 'FisikHarianController::riwayat');
+    $routes->post('saveFisikHarian', 'FisikHarianController::saveFisikHarian');
+    $routes->post('filterData', 'FisikHarianController::filterData');
+});
 
 // Other routes
 $routes->get('pengadaan', 'ProdukController::pengadaan');

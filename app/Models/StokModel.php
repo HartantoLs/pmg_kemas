@@ -47,4 +47,13 @@ class StokModel extends Model
 
         return ['dus' => $stok_dus, 'satuan' => $stok_satuan];
     }
+
+    public function getStokOverpack($produk_id)
+    {
+        return $this->db->table('view_stok_overpack')
+            ->where('id_produk', $produk_id)
+            ->get()
+            ->getRowArray();
+    }
+
 }
