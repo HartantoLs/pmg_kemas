@@ -1,0 +1,1805 @@
+CRITICAL - 2025-07-21 08:28:02 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+INFO - 2025-07-21 01:28:25 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 01:28:25 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 01:28:25 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+CRITICAL - 2025-07-21 02:03:56 --> Error: Class "App\Models\AdminModel" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\AdminController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\AdminController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-21 02:05:02 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(172): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 02:06:23 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(172): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+INFO - 2025-07-21 02:13:04 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:13:04 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:13:04 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:13:24 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:13:24 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:13:24 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:13:29 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:13:29 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:13:29 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:14:41 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:14:41 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:14:41 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:14:50 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:14:50 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:14:50 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:15:02 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:15:02 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:15:02 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:15:16 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:15:16 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:15:16 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:15:54 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:15:54 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:15:54 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:16:00 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:16:00 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:16:00 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:16:55 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:16:55 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:16:55 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:18:44 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:18:44 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:18:44 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:21:12 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:21:12 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:21:12 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:22:01 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:22:01 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:22:01 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:22:14 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-21 02:22:14 --> Found 72 existing records for 2025-06
+INFO - 2025-07-21 02:22:14 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:22:23 --> Saving opname data for date: 2025-06-01, items count: 18
+INFO - 2025-07-21 02:22:23 --> Database transaction started
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P15-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P15-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P15-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P15-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P18-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P18-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P18-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P18-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P17-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P17-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P17-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P17-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P16-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P16-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P16-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P16-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P7-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P7-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P7-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P7-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P5-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":30,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P5-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P5-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P5-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P4-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P4-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":2,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P4-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":3,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P4-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P2-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":1,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P2-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P2-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P2-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P3-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P3-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P3-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P3-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P1-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":1,"jumlah_dus_opname":55,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P1-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P1-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P1-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P6-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P6-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P6-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P6-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P12-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P12-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P12-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P12-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P11-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P11-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P11-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P11-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P9-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P9-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P9-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P9-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P10-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P10-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P10-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P10-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P8-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P8-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P8-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P8-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P13-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P13-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P13-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P13-G3
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P14-G4
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P14-G1
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P14-G2
+DEBUG - 2025-07-21 02:22:23 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:23 --> Successfully saved P14-G3
+INFO - 2025-07-21 02:22:23 --> Starting recalculation for following months
+INFO - 2025-07-21 02:22:23 --> Recalculation completed for months: August 2025
+INFO - 2025-07-21 02:22:23 --> Database transaction committed successfully
+INFO - 2025-07-21 02:22:23 --> SaveOpname completed successfully. Saved: 72, Errors: 0, Recalculated months: 1
+INFO - 2025-07-21 02:22:37 --> Saving opname data for date: 2025-06-01, items count: 18
+INFO - 2025-07-21 02:22:37 --> Database transaction started
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P15-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P15-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P15-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":15,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P15-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P18-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P18-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P18-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":18,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P18-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P17-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P17-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P17-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":17,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P17-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P16-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P16-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P16-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":16,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P16-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P7-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P7-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P7-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":7,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P7-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P5-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":30,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P5-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P5-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":5,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P5-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P4-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P4-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":2,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P4-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":4,"gudang_id":3,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P4-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P2-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":1,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P2-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P2-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":2,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P2-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P3-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P3-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P3-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":3,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P3-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P1-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":1,"jumlah_dus_opname":55,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P1-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P1-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":1,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P1-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P6-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P6-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P6-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":6,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P6-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P12-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P12-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P12-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":12,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P12-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P11-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P11-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P11-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":11,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P11-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P9-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P9-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P9-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":9,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P9-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P10-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P10-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P10-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":10,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P10-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P8-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P8-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P8-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":8,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P8-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P13-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P13-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P13-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":13,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P13-G3
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P14-G4
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P14-G1
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P14-G2
+DEBUG - 2025-07-21 02:22:37 --> Attempting to save item: {"tanggal_opname":"2025-06-01","produk_id":14,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-21 02:22:37 --> Successfully saved P14-G3
+INFO - 2025-07-21 02:22:37 --> Starting recalculation for following months
+INFO - 2025-07-21 02:22:37 --> Recalculation completed for months: 
+INFO - 2025-07-21 02:22:37 --> Database transaction committed successfully
+INFO - 2025-07-21 02:22:37 --> SaveOpname completed successfully. Saved: 72, Errors: 0, Recalculated months: 0
+INFO - 2025-07-21 02:24:24 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:24:24 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:24:24 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+CRITICAL - 2025-07-21 02:27:18 --> Error: Class "App\Models\FisikHarianModel" not found
+[Method: GET, Route: fisik_harian/form]
+in APPPATH\Controllers\FisikHarianController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\FisikHarianController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+INFO - 2025-07-21 02:31:26 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:31:26 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:31:26 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:33:25 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:33:25 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:33:25 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:33:48 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:33:48 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:33:48 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:37:36 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:37:36 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:37:36 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:39:32 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:39:32 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:39:32 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:39:53 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:39:54 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:39:54 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:42:41 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:42:41 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:42:41 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:42:45 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:42:45 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:42:45 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:45:14 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:45:14 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:45:14 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:47:51 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:47:51 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:47:51 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:47:55 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:47:55 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:47:55 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:48:00 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:48:00 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:48:00 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:48:10 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:48:10 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:48:10 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:48:12 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:48:12 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:48:12 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:48:16 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:48:16 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:48:16 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:48:42 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:48:42 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:48:42 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:49:04 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:49:04 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:49:04 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:49:07 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:49:07 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:49:07 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 02:51:47 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 02:51:47 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 02:51:47 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+ERROR - 2025-07-21 03:01:14 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(256): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-21 10:11:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 10:20:31 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(5): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 10:20:36 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(5): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:07 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 03:26:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Config\Routes.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Router\RouteCollection.php(339): require('D:\\BW\\CI4_pmg_kemas\\app\\Config\\Routes.php')
+ 4 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 5 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+DEBUG - 2025-07-21 03:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-21 10:27:18 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+DEBUG - 2025-07-21 03:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-21 03:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-21 03:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-21 03:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-21 03:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-21 03:28:32 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(256): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:28:37 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(256): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:29:56 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(256): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-21 10:30:01 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 10:30:16 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 574.
+ 1 SYSTEMPATH\HTTP\URI.php(574): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Views\layout\navbar.php(6): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layout/navbar', null, true)
+ 6 APPPATH\Views\layout\main.php(14): CodeIgniter\View\View->include('layout/navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\BW\\CI4_pmg_kemas\\app\\Views\\layout\\main.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard/index', [], true)
+11 APPPATH\Controllers\DashboardController.php(39): view('dashboard/index', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+INFO - 2025-07-21 03:31:54 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 03:31:54 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 03:31:54 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 03:37:04 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 03:37:04 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 03:37:04 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 03:37:32 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 03:37:32 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 03:37:32 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+ERROR - 2025-07-21 03:41:38 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(256): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:52:16 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:52:23 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:52:27 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:52:44 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:52:53 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:53:01 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:54:22 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:54:41 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:55:40 --> mysqli_sql_exception: Table 'pmg_kemas.jenis_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(156): App\Models\AdminModel->getJenisProduksiList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:56:02 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 03:56:54 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:02:29 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:04:21 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:22 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:30 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('1')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:31 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('1')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:32 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('2')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:33 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('2')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:47 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('21')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:48 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('20')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:05:49 --> mysqli_sql_exception: Table 'pmg_kemas.bahan_baku_produksi' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `bbp`.*,...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bbp`.*,...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bbp`.*,...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `bbp`.*,...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('20')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:06:16 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_ba...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_ba...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_ba...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_ba...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(216): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(246): App\Models\AdminModel->getBarangList()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getBarangList()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:06:20 --> mysqli_sql_exception: Table 'pmg_kemas.barang' doesn't exist in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.*, `...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(95): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(174): App\Models\AdminModel->getBahanBakuByJenisProduksi('1')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->getJenisProduksiDetail()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+CRITICAL - 2025-07-21 04:07:44 --> ArgumentCountError: Too few arguments to function App\Models\AdminModel::insertJenisProduksi(), 2 passed in D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php on line 208 and exactly 3 expected
+[Method: POST, Route: admin/savejenisproduksi]
+in APPPATH\Models\AdminModel.php on line 99.
+ 1 APPPATH\Controllers\AdminController.php(208): App\Models\AdminModel->insertJenisProduksi([...], [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 04:08:11 --> ArgumentCountError: Too few arguments to function App\Models\AdminModel::updateJenisProduksi(), 3 passed in D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php on line 205 and exactly 4 expected
+[Method: POST, Route: admin/savejenisproduksi]
+in APPPATH\Models\AdminModel.php on line 131.
+ 1 APPPATH\Controllers\AdminController.php(205): App\Models\AdminModel->updateJenisProduksi('1', [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+ERROR - 2025-07-21 04:12:15 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:12:24 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:12:37 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:12:48 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:13:06 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:13:18 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:13:33 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:13:35 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:13:50 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:14:46 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:16:21 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:16:30 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:16:34 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:16:42 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:17:08 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(139): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:18:15 --> ===> UPDATE JENIS PRODUKSI
+DEBUG - 2025-07-21 04:18:15 --> ID: 1
+DEBUG - 2025-07-21 04:18:15 --> JenisProduksiData: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"21"}
+DEBUG - 2025-07-21 04:18:15 --> ProdukData: {"satuan_per_dus":"21"}
+DEBUG - 2025-07-21 04:18:15 --> BahanBaku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24}]
+ERROR - 2025-07-21 04:18:15 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(145): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:18:15 --> Update jenis produksi result: false
+DEBUG - 2025-07-21 04:18:15 --> Update produk result: true
+DEBUG - 2025-07-21 04:18:15 --> Delete bahan baku sebelumnya: DONE
+DEBUG - 2025-07-21 04:18:15 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305036","jumlah":1}
+DEBUG - 2025-07-21 04:18:15 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305037","jumlah":24}
+DEBUG - 2025-07-21 04:18:15 --> Transaksi status: false
+CRITICAL - 2025-07-21 04:18:31 --> ArgumentCountError: Too few arguments to function App\Models\AdminModel::insertJenisProduksi(), 2 passed in D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php on line 210 and exactly 3 expected
+[Method: POST, Route: admin/savejenisproduksi]
+in APPPATH\Models\AdminModel.php on line 99.
+ 1 APPPATH\Controllers\AdminController.php(210): App\Models\AdminModel->insertJenisProduksi([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+CRITICAL - 2025-07-21 04:19:04 --> ArgumentCountError: Too few arguments to function App\Models\AdminModel::insertJenisProduksi(), 2 passed in D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php on line 210 and exactly 3 expected
+[Method: POST, Route: admin/savejenisproduksi]
+in APPPATH\Models\AdminModel.php on line 99.
+ 1 APPPATH\Controllers\AdminController.php(210): App\Models\AdminModel->insertJenisProduksi([...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+DEBUG - 2025-07-21 04:19:29 --> ===> UPDATE JENIS PRODUKSI
+DEBUG - 2025-07-21 04:19:29 --> ID: 1
+DEBUG - 2025-07-21 04:19:29 --> JenisProduksiData: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:29 --> ProdukData: {"satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:29 --> BahanBaku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24},{"kode_barang":"01305.060","jumlah":12}]
+ERROR - 2025-07-21 04:19:29 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(145): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:19:29 --> Update jenis produksi result: false
+DEBUG - 2025-07-21 04:19:29 --> Update produk result: true
+DEBUG - 2025-07-21 04:19:29 --> Delete bahan baku sebelumnya: DONE
+DEBUG - 2025-07-21 04:19:29 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305036","jumlah":1}
+DEBUG - 2025-07-21 04:19:29 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305037","jumlah":24}
+DEBUG - 2025-07-21 04:19:29 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305.060","jumlah":12}
+DEBUG - 2025-07-21 04:19:29 --> Transaksi status: false
+DEBUG - 2025-07-21 04:19:37 --> ===> UPDATE JENIS PRODUKSI
+DEBUG - 2025-07-21 04:19:37 --> ID: 1
+DEBUG - 2025-07-21 04:19:37 --> JenisProduksiData: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:37 --> ProdukData: {"satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:37 --> BahanBaku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24},{"kode_barang":"01305.060","jumlah":12}]
+ERROR - 2025-07-21 04:19:37 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(145): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:19:37 --> Update jenis produksi result: false
+DEBUG - 2025-07-21 04:19:37 --> Update produk result: true
+DEBUG - 2025-07-21 04:19:37 --> Delete bahan baku sebelumnya: DONE
+DEBUG - 2025-07-21 04:19:37 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305036","jumlah":1}
+DEBUG - 2025-07-21 04:19:37 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305037","jumlah":24}
+DEBUG - 2025-07-21 04:19:37 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305.060","jumlah":12}
+DEBUG - 2025-07-21 04:19:37 --> Transaksi status: false
+DEBUG - 2025-07-21 04:19:46 --> ===> UPDATE JENIS PRODUKSI
+DEBUG - 2025-07-21 04:19:46 --> ID: 1
+DEBUG - 2025-07-21 04:19:46 --> JenisProduksiData: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:46 --> ProdukData: {"satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:46 --> BahanBaku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24},{"kode_barang":"01305.060","jumlah":12}]
+ERROR - 2025-07-21 04:19:46 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(145): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:19:46 --> Update jenis produksi result: false
+DEBUG - 2025-07-21 04:19:46 --> Update produk result: true
+DEBUG - 2025-07-21 04:19:46 --> Delete bahan baku sebelumnya: DONE
+DEBUG - 2025-07-21 04:19:46 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305036","jumlah":1}
+DEBUG - 2025-07-21 04:19:46 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305037","jumlah":24}
+DEBUG - 2025-07-21 04:19:46 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305.060","jumlah":12}
+DEBUG - 2025-07-21 04:19:46 --> Transaksi status: false
+DEBUG - 2025-07-21 04:19:56 --> ===> UPDATE JENIS PRODUKSI
+DEBUG - 2025-07-21 04:19:56 --> ID: 1
+DEBUG - 2025-07-21 04:19:56 --> JenisProduksiData: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:56 --> ProdukData: {"satuan_per_dus":"12"}
+DEBUG - 2025-07-21 04:19:56 --> BahanBaku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24}]
+ERROR - 2025-07-21 04:19:56 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(145): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(207): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+DEBUG - 2025-07-21 04:19:56 --> Update jenis produksi result: false
+DEBUG - 2025-07-21 04:19:56 --> Update produk result: true
+DEBUG - 2025-07-21 04:19:56 --> Delete bahan baku sebelumnya: DONE
+DEBUG - 2025-07-21 04:19:56 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305036","jumlah":1}
+DEBUG - 2025-07-21 04:19:56 --> Insert bahan baku: {"nom_jenis_produksi":"1","kode_barang":"01305037","jumlah":24}
+DEBUG - 2025-07-21 04:19:56 --> Transaksi status: false
+ERROR - 2025-07-21 04:21:03 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(210): App\Models\AdminModel->insertJenisProduksi(Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:21:08 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(105): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(210): App\Models\AdminModel->insertJenisProduksi(Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+INFO - 2025-07-21 04:24:13 --> Input data: {"nom_jenis_produksi":"1","jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12","bahan_barang":["01305036","01305037"],"bahan_jumlah":["1.00","24.00"],"bahan_baku":"[{\"kode_barang\":\"01305036\",\"jumlah\":1},{\"kode_barang\":\"01305037\",\"jumlah\":24}]"}
+INFO - 2025-07-21 04:24:13 --> Jenis Produksi Data: {"jenis_produksi":"RB Refil 500 ML Pouch","group_jenis_produksi":"RB Refil 500 ML","keterangan":"Rose Brand","satuan_per_dus":"12"}
+INFO - 2025-07-21 04:24:13 --> Produk Data: {"nama_produk":"RB Refil 500 ML","satuan_per_dus":"12"}
+INFO - 2025-07-21 04:24:13 --> Bahan Baku: [{"kode_barang":"01305036","jumlah":1},{"kode_barang":"01305037","jumlah":24}]
+ERROR - 2025-07-21 04:24:13 --> mysqli_sql_exception: Unknown column 'satuan_per_dus' in 'field list' in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(152): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(234): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+INFO - 2025-07-21 04:24:13 --> Operation result: false
+ERROR - 2025-07-21 04:40:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`log_perbandingan_stok`, CONSTRAINT `log_perbandingan_stok_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `tbl_jen...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jen...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jen...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jen...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(137): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(214): App\Models\AdminModel->updateJenisProduksi('1', Array, Array, Array)
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->saveJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:45:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(238): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:45:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(238): App\Models\AdminModel->deleteJenisProduksi('25')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:45:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(238): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 04:45:43 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(238): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:08:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(174): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(237): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:08:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(174): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(237): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:09:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(174): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(237): App\Models\AdminModel->deleteJenisProduksi('25')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:09:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(174): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(237): App\Models\AdminModel->deleteJenisProduksi('25')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:12:55 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(237): App\Models\AdminModel->deleteJenisProduksi('24')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:12:55 --> [DELETE_JENIS_PRODUKSI] Gagal delete jenis produksi utama untuk ID 24
+ERROR - 2025-07-21 05:13:53 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`pmg_kemas`.`stok_produk`, CONSTRAINT `stok_produk_ibfk_1` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`)) in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tb...', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\AdminModel.php(189): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\AdminController.php(245): App\Models\AdminModel->deleteJenisProduksi('25')
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\AdminController->deleteJenisProduksi()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+ERROR - 2025-07-21 05:13:53 --> [DELETE_JENIS_PRODUKSI] Gagal delete jenis produksi utama untuk ID 25
+ERROR - 2025-07-21 05:13:53 --> [CONTROLLER_DELETE] Gagal delete jenis produksi utama untuk ID 25
+INFO - 2025-07-21 07:02:28 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 07:02:28 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 07:02:28 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-21 07:02:53 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-21 07:02:53 --> Found 72 existing records for 2025-07
+INFO - 2025-07-21 07:02:53 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit

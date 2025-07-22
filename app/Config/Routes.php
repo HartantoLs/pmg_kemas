@@ -124,21 +124,55 @@ $routes->group('fisik_harian', function($routes) {
     $routes->post('filterData', 'FisikHarianController::filterData');
 });
 
-// Other routes
-$routes->get('pengadaan', 'ProdukController::pengadaan');
-$routes->get('laporan', 'RiwayatController::laporan');
-$routes->get('lihat-stok', 'RiwayatController::lihatStok');
-$routes->get('fisik-harian', 'RiwayatController::fisikHarian');
-$routes->get('riwayat-pengemasan', 'RiwayatController::riwayatPengemasan');
-$routes->get('riwayat-penjualan', 'RiwayatController::riwayatPenjualan');
-$routes->get('riwayat-operstok', 'RiwayatController::riwayatOperstok');
-$routes->get('riwayat-operpack', 'RiwayatController::riwayatOperpack');
-$routes->get('riwayat-seleksi', 'RiwayatController::riwayatSeleksi');
-$routes->get('riwayat-kemas-ulang', 'RiwayatController::riwayatKemasUlang');
-
 // Laporan routes
-$routes->get('laporan/kartu-stok', 'LaporanController::kartuStok');
-$routes->get('laporan/mutasi', 'LaporanController::mutasi');
-$routes->get('laporan/overpack', 'LaporanController::overpack');
-$routes->get('laporan/perbandingan', 'LaporanController::perbandingan');
-$routes->get('laporan/lihat-stok', 'LaporanController::lihatStok');
+$routes->group('laporan', ['namespace' => 'App\Controllers'], static function ($routes) {
+    // Laporan Perbandingan Stok
+    $routes->get('perbandingan-stok', 'LaporanController::perbandinganStok');
+    $routes->get('getcomparisondata', 'LaporanController::getComparisonData');
+    $routes->post('exportcsv', 'LaporanController::exportCSV');
+    $routes->get('printlaporan', 'LaporanController::printLaporan');
+    
+    // Laporan Kartu Stok
+    $routes->get('kartu-stok', 'LaporanController::kartuStok');
+    $routes->get('getkartustokdata', 'LaporanController::getKartuStokData');
+    $routes->post('exportkartustokcsv', 'LaporanController::exportKartuStokCSV');
+    
+    // Laporan Mutasi Stok
+    $routes->get('mutasi-stok', 'LaporanController::mutasiStok');
+    $routes->get('getmutasidata', 'LaporanController::getMutasiData');
+    
+    // Laporan Stok Saat Ini
+    $routes->get('stok-saat-ini', 'LaporanController::stokSaatIni');
+    $routes->post('filterstok', 'LaporanController::filterStok');
+    $routes->post('exportstokcsv', 'LaporanController::exportStokCSV');
+    
+    // Laporan Overpack
+    $routes->get('overpack', 'LaporanController::laporanOverpack');
+    $routes->get('getoverpackdata', 'LaporanController::getOverpackData');
+    $routes->post('exportoverpackcsv', 'LaporanController::exportOverpackCSV');
+});
+
+
+// Admin Routes
+$routes->group('admin', function($routes) {
+    $routes->get('/', 'AdminController::index');
+    
+    // Gudang routes
+    $routes->get('getgudanglist', 'AdminController::getGudangList');
+    $routes->post('savegudang', 'AdminController::saveGudang');
+    $routes->post('deletegudang', 'AdminController::deleteGudang');
+    
+    // Produk routes
+    $routes->get('getproduklist', 'AdminController::getProdukList');
+    $routes->post('saveproduk', 'AdminController::saveProduk');
+    $routes->post('deleteproduk', 'AdminController::deleteProduk');
+    
+    // Jenis Produksi routes
+    $routes->get('getjenisproduksilist', 'AdminController::getJenisProduksiList');
+    $routes->get('getjenisproduksidetail', 'AdminController::getJenisProduksiDetail');
+    $routes->post('savejenisproduksi', 'AdminController::saveJenisProduksi');
+    $routes->post('deletejenisproduksi', 'AdminController::deleteJenisProduksi');
+    
+    // Barang routes
+    $routes->get('getbaranglist', 'AdminController::getBarangList');
+});

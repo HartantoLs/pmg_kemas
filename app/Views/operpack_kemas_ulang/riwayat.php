@@ -7,7 +7,7 @@
 <?= $this->section('main_content') ?>
 <div class="container">
     <div class="header">
-        <h1><i class="fas fa-boxes-packing"></i> Riwayat Kemas Ulang</h1>
+        <h1><i class="fas fa-box-open"></i> Riwayat Kemas Ulang</h1>
         <p>Kelola dan pantau produk yang berhasil dikemas ulang dari Overpack</p>
     </div>
     

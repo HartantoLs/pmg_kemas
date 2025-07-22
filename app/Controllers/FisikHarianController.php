@@ -30,8 +30,8 @@ class FisikHarianController extends Controller
         $data = [
             'title' => 'Input Stok Fisik Harian',
             'selected_tanggal' => $selected_tanggal,
-            'gudang_list' => $this->gudangModel->findAll(),
-            'produk_list' => $this->produkModel->orderBy('nama_produk', 'ASC')->findAll(),
+            'gudang_list' => $this->gudangModel->getGudangList(),
+            'produk_list' => $this->produkModel->getProdukList(),
             'existing_data' => [],
             'stok_pembukuan_map' => []
         ];
@@ -47,7 +47,7 @@ class FisikHarianController extends Controller
             }
 
             // Ambil data stok pembukuan untuk tombol import
-            $stok_pembukuan = $this->stokModel->findAll();
+            $stok_pembukuan = $this->fisikHarianModel->getCurrentStock();
             foreach ($stok_pembukuan as $stok) {
                 $data['stok_pembukuan_map'][$stok['id_produk']][$stok['id_gudang']] = $stok;
             }
@@ -59,67 +59,135 @@ class FisikHarianController extends Controller
     public function saveFisikHarian()
     {
         if (!$this->request->isAJAX()) {
-            return $this->response->setJSON(['success' => false, 'message' => 'Invalid request']);
+            return $this->response->setJSON(['success' => false, 'message' => 'Invalid request method']);
         }
 
         $tanggal_fisik = $this->request->getPost('tanggal_fisik');
         $items = $this->request->getPost('items');
 
-        if (empty($tanggal_fisik) || empty($items)) {
-            return $this->response->setJSON(['success' => false, 'message' => 'Data tanggal dan item tidak boleh kosong.']);
+        // Validasi input detail
+        if (empty($tanggal_fisik)) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Tanggal fisik tidak boleh kosong']);
+        }
+
+        if (empty($items) || !is_array($items)) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Data items kosong atau format tidak valid']);
         }
 
         $db = \Config\Database::connect();
         $db->transStart();
 
         try {
+            $saved_count = 0;
+            $error_details = [];
+
             foreach ($items as $produk_id => $gudang_data) {
+                if (!is_array($gudang_data)) {
+                    $error_details[] = "Data gudang untuk produk ID {$produk_id} tidak valid";
+                    continue;
+                }
+
                 foreach ($gudang_data as $id_gudang => $jumlah) {
-                    $fisik_dus = intval($jumlah['dus'] ?? 0);
-                    $fisik_satuan = intval($jumlah['satuan'] ?? 0);
+                    try {
+                        $fisik_dus = intval($jumlah['dus'] ?? 0);
+                        $fisik_satuan = intval($jumlah['satuan'] ?? 0);
 
-                    // Ambil stok pembukuan saat ini untuk snapshot
-                    $stok_pembukuan = $this->stokModel->where([
-                        'id_produk' => $produk_id,
-                        'id_gudang' => $id_gudang
-                    ])->first();
+                        // Skip jika kedua nilai 0 (opsional, sesuaikan kebutuhan)
+                        // if ($fisik_dus == 0 && $fisik_satuan == 0) {
+                        //     continue;
+                        // }
 
-                    $sistem_dus = $stok_pembukuan['jumlah_dus'] ?? 0;
-                    $sistem_satuan = $stok_pembukuan['jumlah_satuan'] ?? 0;
+                        // Cek apakah method getHistoricalStock ada
+                        if (method_exists($this->stokModel, 'getHistoricalStock')) {
+                            $stok_pembukuan = $this->stokModel->getHistoricalStock($produk_id, $id_gudang, $tanggal_fisik);
+                        } else {
+                            // Fallback: ambil stok saat ini
+                            $stok_current = $this->stokModel->where(['id_produk' => $produk_id, 'id_gudang' => $id_gudang])->first();
+                            $stok_pembukuan = [
+                                'dus' => $stok_current['jumlah_dus'] ?? 0,
+                                'satuan' => $stok_current['jumlah_satuan'] ?? 0
+                            ];
+                        }
 
-                    // Simpan ke log_perbandingan_stok
-                    $data = [
-                        'tanggal_cek' => $tanggal_fisik,
-                        'id_produk' => $produk_id,
-                        'id_gudang' => $id_gudang,
-                        'fisik_dus' => $fisik_dus,
-                        'fisik_satuan' => $fisik_satuan,
-                        'sistem_dus' => $sistem_dus,
-                        'sistem_satuan' => $sistem_satuan
-                    ];
+                        $sistem_dus = $stok_pembukuan['dus'] ?? 0;
+                        $sistem_satuan = $stok_pembukuan['satuan'] ?? 0;
 
-                    $this->fisikHarianModel->savePerbandingan($data);
+                        $data = [
+                            'tanggal_cek' => $tanggal_fisik,
+                            'id_produk' => (int)$produk_id,
+                            'id_gudang' => (int)$id_gudang,
+                            'fisik_dus' => $fisik_dus,
+                            'fisik_satuan' => $fisik_satuan,
+                            'sistem_dus' => $sistem_dus,
+                            'sistem_satuan' => $sistem_satuan
+                        ];
+
+                        // Validasi data sebelum simpan
+                        if (!is_numeric($produk_id) || !is_numeric($id_gudang)) {
+                            $error_details[] = "ID Produk ({$produk_id}) atau ID Gudang ({$id_gudang}) bukan angka";
+                            continue;
+                        }
+
+                        $result = $this->fisikHarianModel->savePerbandingan($data);
+                        
+                        if (!$result) {
+                            // Ambil error database yang detail
+                            $db_error = $db->error();
+                            $error_details[] = "Gagal simpan Produk ID {$produk_id}, Gudang ID {$id_gudang}: " . $db_error['message'];
+                        } else {
+                            $saved_count++;
+                        }
+
+                    } catch (\Exception $e) {
+                        $error_details[] = "Error pada Produk ID {$produk_id}, Gudang ID {$id_gudang}: " . $e->getMessage();
+                    }
                 }
             }
 
             $db->transComplete();
 
             if ($db->transStatus() === false) {
-                return $this->response->setJSON(['success' => false, 'message' => 'Gagal menyimpan data']);
+                $db_error = $db->error();
+                return $this->response->setJSON([
+                    'success' => false, 
+                    'message' => 'Transaksi database gagal',
+                    'db_error' => $db_error['message'] ?? 'Unknown database error',
+                    'error_details' => $error_details
+                ]);
             }
 
-            return $this->response->setJSON(['success' => true, 'message' => 'Data perbandingan stok fisik berhasil disimpan!']);
+            if (!empty($error_details)) {
+                return $this->response->setJSON([
+                    'success' => false,
+                    'message' => 'Ada error saat menyimpan beberapa data',
+                    'saved_count' => $saved_count,
+                    'error_details' => $error_details
+                ]);
+            }
+
+            return $this->response->setJSON([
+                'success' => true, 
+                'message' => "Berhasil menyimpan {$saved_count} data perbandingan stok fisik!",
+                'saved_count' => $saved_count
+            ]);
 
         } catch (\Exception $e) {
             $db->transRollback();
-            return $this->response->setJSON(['success' => false, 'message' => 'Gagal menyimpan: ' . $e->getMessage()]);
+            return $this->response->setJSON([
+                'success' => false, 
+                'message' => 'Exception error: ' . $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine()
+            ]);
         }
     }
 
     public function riwayat()
     {
         $data = [
-            'title' => 'Riwayat Stok Fisik Harian'
+            'title' => 'Riwayat Stok Fisik Harian',
+            'produk_list' => $this->produkModel->getProdukList(),
+            'gudang_list' => $this->gudangModel->getGudangList()
         ];
 
         return view('fisik_harian/riwayat', $data);

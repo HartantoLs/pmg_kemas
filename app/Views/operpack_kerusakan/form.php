@@ -9,7 +9,7 @@
     <div class="form-card anim-fade-in">
         <div class="form-header">
             <h1>
-                <i class="fas fa-exclamation-triangle"></i>
+                <i class="fas fa-screwdriver-wrench "></i>
                 Form Penerimaan Barang Rusak
             </h1>
         </div>

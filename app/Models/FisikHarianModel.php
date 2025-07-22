@@ -8,7 +8,7 @@ class FisikHarianModel extends Model
 {
     protected $table = 'log_perbandingan_stok';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['tanggal_cek', 'id_produk', 'id_gudang', 'fisik_dus', 'fisik_satuan', 'sistem_dus', 'sistem_satuan'];
+    protected $allowedFields = ['tanggal_cek', 'id_produk', 'id_gudang', 'fisik_dus', 'fisik_satuan', 'sistem_dus', 'sistem_satuan', 'selisih_dus', 'selisih_satuan'];
     protected $useTimestamps = true;
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
@@ -18,19 +18,44 @@ class FisikHarianModel extends Model
         return $this->where('tanggal_cek', $tanggal_cek)->findAll();
     }
 
-    public function savePerbandingan($data)
+     public function savePerbandingan($data)
     {
-        $existing = $this->where([
-            'tanggal_cek' => $data['tanggal_cek'],
-            'id_produk' => $data['id_produk'],
-            'id_gudang' => $data['id_gudang']
-        ])->first();
+        // Hitung selisih sebelum menyimpan
+        $data['selisih_dus'] = $data['fisik_dus'] - $data['sistem_dus'];
+        $data['selisih_satuan'] = $data['fisik_satuan'] - $data['sistem_satuan'];
 
-        if ($existing) {
-            return $this->update($existing['id'], $data);
-        } else {
-            return $this->insert($data);
-        }
+        // Gunakan raw query dengan ON DUPLICATE KEY UPDATE seperti kode lama
+        $sql = "INSERT INTO log_perbandingan_stok 
+                (tanggal_cek, id_produk, id_gudang, fisik_dus, fisik_satuan, sistem_dus, sistem_satuan, selisih_dus, selisih_satuan) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+                ON DUPLICATE KEY UPDATE 
+                    fisik_dus = VALUES(fisik_dus), 
+                    fisik_satuan = VALUES(fisik_satuan), 
+                    sistem_dus = VALUES(sistem_dus), 
+                    sistem_satuan = VALUES(sistem_satuan),
+                    selisih_dus = VALUES(selisih_dus),
+                    selisih_satuan = VALUES(selisih_satuan),
+                    updated_at = NOW()";
+
+        return $this->db->query($sql, [
+            $data['tanggal_cek'],
+            $data['id_produk'], 
+            $data['id_gudang'],
+            $data['fisik_dus'],
+            $data['fisik_satuan'],
+            $data['sistem_dus'],
+            $data['sistem_satuan'],
+            $data['selisih_dus'],
+            $data['selisih_satuan']
+        ]);
+    }
+
+    public function getCurrentStock()
+    {
+        return $this->db->table('stok_produk')
+                       ->select('id_produk, id_gudang, jumlah_dus, jumlah_satuan')
+                       ->get()
+                       ->getResultArray();
     }
 
     public function getFilteredData($tanggal_dari = null, $tanggal_sampai = null, $produk_id = null, $gudang_id = null)

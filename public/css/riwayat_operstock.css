@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: linear-gradient(135deg, #fff5f0 0%, #ffe8d6 100%);
   min-height: 100vh;
   color: #333;
@@ -13,16 +15,16 @@ body {
 
 .container {
   max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 15px auto;
+  padding: 15px;
 }
 
 .header {
   background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
   color: white;
-  padding: 30px;
+  padding: 25px;
   border-radius: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   box-shadow: 0 8px 32px rgba(255, 107, 53, 0.3);
   text-align: center;
 }

@@ -17,8 +17,8 @@ body {
 
 .container {
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 24px;
+    margin: 15px auto;
+    padding: 15px;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
@@ -37,9 +37,9 @@ body {
 .header {
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
-    padding: 36px;
+    padding: 25px;
     border-radius: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     box-shadow: 0 12px 48px rgba(255, 107, 53, 0.3);
     text-align: center;
     position: relative;

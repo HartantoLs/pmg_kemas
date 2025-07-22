@@ -7,7 +7,7 @@
 <?= $this->section('main_content') ?>
 <div class="container">
     <div class="header anim-fade-in">
-        <h1><i class="fas fa-truck-ramp-box"></i> Riwayat Operstock</h1>
+        <h1><i class="fas fa-exchange-alt"></i> Riwayat Operstock</h1>
         <p>Kelola dan pantau riwayat transfer stok antar gudang</p>
     </div>
     <div id="notification-toast" class="notification-toast"></div>

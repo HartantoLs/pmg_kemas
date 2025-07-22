@@ -7,7 +7,7 @@
 <?= $this->section('main_content') ?>
 <div class="container">
     <div class="header">
-        <h1><i class="fas fa-boxes"></i> Riwayat Pengemasan</h1>
+        <h1><i class="fas fa-box"></i> Riwayat Pengemasan</h1>
         <p>Kelola dan pantau riwayat hasil produksi dan pengemasan</p>
     </div>
     

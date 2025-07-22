@@ -7,7 +7,7 @@
 <?= $this->section('main_content') ?>
 <div class="container">
     <div class="header">
-        <h1><i class="fas fa-check-double"></i> Riwayat Seleksi Overpack</h1>
+        <h1><i class="fas fa-clipboard-check"></i> Riwayat Seleksi Overpack</h1>
         <p>Kelola dan pantau riwayat seleksi produk rusak</p>
     </div>
     

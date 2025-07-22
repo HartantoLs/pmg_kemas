@@ -1,0 +1,51 @@
+ERROR - 2025-07-22 01:00:28 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'pmg_kemas', 3306, '', 0)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\BW\CI4_pmg_kemas\app\Models\DashboardModel.php(24): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\BW\CI4_pmg_kemas\app\Controllers\DashboardController.php(17): App\Models\DashboardModel->getStats()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\BW\CI4_pmg_kemas\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\BW\CI4_pmg_kemas\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\BW\CI4_pmg_kemas\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\BW\CI4_pmg_kemas\app\Models\DashboardModel.php(24): CodeIgniter\Database\BaseBuilder->countAllResults()
+#4 D:\BW\CI4_pmg_kemas\app\Controllers\DashboardController.php(17): App\Models\DashboardModel->getStats()
+#5 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+#6 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#7 D:\BW\CI4_pmg_kemas\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\BW\CI4_pmg_kemas\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 D:\BW\CI4_pmg_kemas\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 D:\BW\CI4_pmg_kemas\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 D:\BW\CI4_pmg_kemas\system\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_k...')
+#12 {main}
+CRITICAL - 2025-07-22 01:00:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `produk`', [], false)
+ 3 APPPATH\Models\DashboardModel.php(24): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\DashboardController.php(17): App\Models\DashboardModel->getStats()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\BW\\CI4_pmg_kemas\\public\\index.php')
+INFO - 2025-07-22 01:01:13 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 01:01:13 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 01:01:13 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit

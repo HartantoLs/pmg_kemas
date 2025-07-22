@@ -7,7 +7,7 @@
 <?= $this->section('main_content') ?>
 <div class="container">
     <div class="header anim-fade-in">
-        <h1><i class="fas fa-receipt"></i> Riwayat Penjualan</h1>
+        <h1><i class="fas fa-cart-arrow-down"></i> Riwayat Penjualan</h1>
         <p>Kelola dan pantau riwayat transaksi penjualan produk</p>
     </div>
 

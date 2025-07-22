@@ -1,22 +1,22 @@
-<?= $this->extend('layouts/main') ?>
+<?= $this->extend('layout/main') ?>
 
-<?= $this->section('title') ?>
-<?= $title ?>
+<?= $this->section('page_css') ?>
+<link href="/css/form_stok_awal_bulan.css" rel="stylesheet">
 <?= $this->endSection() ?>
 
-<?= $this->section('content') ?>
-<div class="container-fluid px-4">
+<?= $this->section('main_content') ?>
+<div class="container">
     <div class="page-header">
         <h1><i class="fas fa-warehouse"></i> Form Stock Opname</h1>
         <p>Sistem pencatatan stok fisik bulanan yang terintegrasi dan akurat</p>
     </div>
 
-    <div class="card fade-in">
+    <div class="card">
         <div class="card-header">
             <h2><i class="fas fa-calendar-alt"></i> Pilih Periode Opname</h2>
         </div>
         <div class="card-body">
-            <form method="GET" action="<?= base_url('stok_awal_bulan/form') ?>">
+            <form method="GET" action="/stok_awal_bulan/form">
                 <div class="form-grid">
                     <div class="form-group">
                         <label for="tanggal_opname_month" class="form-label">
@@ -67,7 +67,7 @@
     $current_mode = $mode_config[$mode] ?? $mode_config['create'];
     ?>
 
-    <div class="status-card fade-in">
+    <div class="status-card">
         <div class="status-info">
             <div class="status-icon <?= $current_mode['icon_class'] ?>">
                 <i class="<?= $current_mode['icon'] ?>"></i>
@@ -86,11 +86,10 @@
         </div>
     </div>
 
-    <div id="formMessage" class="alert hidden"></div>
+    <div id="form-messages" class="alert" style="display: none;"></div>
 
-    <form id="formOpnameData" class="fade-in">
+    <form id="formOpnameData">
         <input type="hidden" name="tanggal_opname" value="<?= date('Y-m-01', strtotime($selected_month_year . '-01')) ?>">
-        <input type="hidden" name="action" value="save_opname">
         
         <div class="table-container">
             <div class="card-header">
@@ -131,7 +130,7 @@
                             <tr>
                                 <td>
                                     <?= esc($produk['nama_produk']) ?>
-                                    <div class="text-sm mb-2" style="color: #f7931e;">
+                                    <div style="font-size: 0.875rem; margin-bottom: 0.5rem; color: #f7931e;">
                                         <?= ($produk['satuan_per_dus'] > 1) ? $produk['satuan_per_dus'] . ' satuan/dus' : 'Satuan only' ?>
                                     </div>
                                 </td>
@@ -169,8 +168,8 @@
                 </table>
             </div>
 
-            <div style="padding: 2rem; background: #f8fafc; border-top: 2px solid #e5e7eb;">
-                <button type="submit" class="btn <?= $mode === 'edit' ? 'btn-warning' : 'btn-success' ?>">
+            <div class="submit-section">
+                <button type="submit" class="submit-btn <?= $mode === 'edit' ? 'btn-warning' : 'btn-success' ?>">
                     <i class="fas fa-<?= $mode === 'edit' ? 'edit' : 'save' ?>"></i>
                     <?= $mode === 'edit' ? 'Update Data Opname' : 'Simpan Opname Baru' ?>
                 </button>
@@ -184,10 +183,6 @@
 </div>
 <?= $this->endSection() ?>
 
-<?= $this->section('styles') ?>
-<link rel="stylesheet" href="<?= base_url('css/form_stok_awal_bulan.css') ?>">
-<?= $this->endSection() ?>
-
-<?= $this->section('scripts') ?>
-<script src="<?= base_url('js/form_stok_awal_bulan.js') ?>"></script>
+<?= $this->section('page_js') ?>
+<script src="/js/form_stok_awal_bulan.js"></script>
 <?= $this->endSection() ?>
