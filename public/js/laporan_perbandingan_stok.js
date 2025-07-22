@@ -1,8 +1,7 @@
 $(document).ready(() => {
     // === PENGATURAN & VARIABEL ===
     const container = $(".container");
-    // [IMPROVEMENT] Mengambil base URL secara dinamis dari atribut HTML
-    const baseUrl = container.data("base-url");
+    const selfUrl = `${baseUrl}/laporan`;
     let debounceTimeout;
 
     // === FUNGSI HELPERS ===
@@ -60,7 +59,7 @@ $(document).ready(() => {
 
     /**
      * Mengupdate seluruh UI berdasarkan data dari AJAX.
-     * @param {object} data - Objek response dari server.
+     * @param {object} data 
      */
     function updateUI(data) {
         if (!data.success) {
@@ -123,11 +122,11 @@ $(document).ready(() => {
      */
     function fetchReportData() {
         $.ajax({
-            url: `${baseUrl}/getcomparisondata`,
+            url: `${selfUrl}/getcomparisondata`,
             type: "GET",
-            data: getFilterParams(), // [IMPROVEMENT] Menggunakan fungsi helper
+            data: getFilterParams(), 
             dataType: "json",
-            // beforeSend: () => toggleLoading(true), // [IMPROVEMENT] Tampilkan loading
+            beforeSend: () => toggleLoading(true), 
             success: (data) => updateUI(data),
             error: (jqXHR, textStatus, errorThrown) => {
                 console.error("AJAX Error:", textStatus, errorThrown, jqXHR.responseText);
@@ -140,7 +139,7 @@ $(document).ready(() => {
                     </tr>
                 `);
             },
-            complete: () => toggleLoading(false) // [IMPROVEMENT] Sembunyikan loading setelah selesai (baik sukses maupun error)
+            complete: () => toggleLoading(false) 
         });
     }
 
@@ -154,14 +153,35 @@ $(document).ready(() => {
 
     // Fungsi export CSV
     window.exportToCSV = () => {
-        const printUrl = `${baseUrl}/exportcsv?${getFilterParams()}`;
-        window.location.href = printUrl; 
+        const exportUrl = `${selfUrl}/exportcsv`;
+
+        const form = $("<form>", {
+            method: "POST", 
+            action: exportUrl,
+        });
+
+        const formArray = $("#filterForm").serializeArray();
+
+        formArray.forEach((item) => {
+            form.append(
+                $("<input>", {
+                    type: "hidden",
+                    name: item.name,
+                    value: item.value,
+                }),
+            );
+        });
+
+
+        $("body").append(form);
+        form.submit();
+        form.remove();
         showNotification("Export CSV dimulai...", "success");
     };
 
     // Fungsi print laporan
     window.printLaporan = () => {
-        const printUrl = `${baseUrl}/printlaporan?${getFilterParams()}`;
+        const printUrl = `${selfUrl}/printlaporan?${getFilterParams()}`;
         window.open(printUrl, "_blank");
     };
 

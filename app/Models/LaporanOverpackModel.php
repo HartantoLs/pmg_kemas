@@ -195,7 +195,7 @@ class LaporanOverpackModel extends Model
             $csv_data[] = ['Periode: ' . date('d F Y', strtotime($filters['tanggal_mulai'])) . ' s/d ' . date('d F Y', strtotime($filters['tanggal_akhir']))];
         }
         
-        $csv_data[] = []; // Empty row
+        $csv_data[] = []; 
 
         if ($tipe_laporan === 'harian') {
             // Header untuk laporan harian

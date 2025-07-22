@@ -1,6 +1,63 @@
-<IfModule authz_core_module>
-	Require all denied
+# CodeIgniter 4 Root .htaccess
+# Redirect all requests to public folder
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+    
+    # Redirect all requests to public folder
+    RewriteCond %{REQUEST_URI} !^/pmg_produk/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    # Handle missing trailing slash
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . public/index.php [L]
 </IfModule>
-<IfModule !authz_core_module>
-	Deny from all
+
+<IfModule !mod_rewrite.c>
+    # Fallback if mod_rewrite is not available
+    ErrorDocument 404 /pmg_produk/public/index.php
+</IfModule>
+
+# Security: Block access to sensitive files
+<Files "composer.json">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</Files>
+
+<Files "composer.lock">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</Files>
+
+<Files ".env">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</Files>
+
+<Files ".gitignore">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Deny from all
+    </IfModule>
+</Files>
+
+# Block access to app and system folders
+<IfModule mod_rewrite.c>
+    RewriteRule ^(app|system|writable)/ - [F,L]
 </IfModule>

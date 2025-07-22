@@ -1,7 +1,7 @@
 (function() {
     let itemCounter = 0;
-    const selfUrl = "/pengemasan";
-
+    const selfUrl = `${baseUrl}/pengemasan`;
+    
     function tambahItem() {
         const itemIndex = itemCounter++;
         const newItem = $(`

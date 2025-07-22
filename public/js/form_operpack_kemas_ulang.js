@@ -2,7 +2,7 @@
 const $ = window.jQuery
 
 $(document).ready(() => {
-  const baseUrl = window.location.origin
+  const selfUrl = `${baseUrl}/operpack_kemas_ulang`
   let currentMaxUnit = 0
   let productData = {}
 
@@ -50,7 +50,7 @@ $(document).ready(() => {
     }
 
     showLoading()
-    $.getJSON(baseUrl + "/operpack_kemas_ulang/get-stok-repack", { id_produk: idProduk })
+    $.getJSON(selfUrl + "/get-stok-repack", { id_produk: idProduk })
       .done((data) => {
         productData = data
         currentMaxUnit = data.max_unit
@@ -285,7 +285,7 @@ $(document).ready(() => {
     showLoading()
 
     $.ajax({
-      url: baseUrl + "/operpack_kemas_ulang/simpan-repack",
+      url: selfUrl + "/simpan-repack",
       type: "POST",
       data: form.serialize(),
       dataType: "json",

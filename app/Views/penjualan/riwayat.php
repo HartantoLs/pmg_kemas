@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/riwayat_penjualan.css" rel="stylesheet">
+<link href="<?= base_url('css/riwayat_penjualan.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -40,5 +40,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/riwayat_penjualan.js"></script>
+<script src="<?= base_url('js/riwayat_penjualan.js') ?>"></script>
 <?= $this->endSection() ?>

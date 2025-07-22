@@ -2,7 +2,7 @@
 const $ = window.jQuery || window.$
 
 $(document).ready(() => {
-  const baseUrl = "/laporan"
+  const selfUrl = `${baseUrl}/laporan`;
   let currentData = null
 
   function showLoading() {
@@ -120,7 +120,7 @@ $(document).ready(() => {
     const formData = $("#filterForm").serialize()
 
     $.ajax({
-      url: `${baseUrl}/getkartustokdata`,
+      url: `${selfUrl}/getkartustokdata`,
       type: "GET",
       data: formData,
       dataType: "json",
@@ -154,7 +154,7 @@ $(document).ready(() => {
     // Create a form and submit it
     const form = $("<form>", {
       method: "POST",
-      action: `${baseUrl}/exportkartustokcsv`,
+      action: `${selfUrl}/exportkartustokcsv`,
     })
 
     // Add form data as hidden inputs

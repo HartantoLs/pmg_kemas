@@ -129,7 +129,6 @@ class OperpackKerusakanController extends BaseController
         $stok_historis = $this->stokModel->getHistoricalStock($id_produk, $id_gudang, $tanggal);
         
         if ($stok_historis['dus'] > 0 || $stok_historis['satuan'] > 0) {
-            // Ambil data produk untuk satuan_per_dus
             $produk = $this->produkModel->find($id_produk);
             
             return $this->response->setJSON([

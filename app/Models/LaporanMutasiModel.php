@@ -461,4 +461,86 @@ class LaporanMutasiModel extends Model
             default: return ['P1', 'P2', 'P3'];
         }
     }
+
+     public function exportMutasiToCSV(array $report_data, array $totals, array $warehouse_columns)
+    {
+        $csv_data = [];
+
+        // Helper function untuk format stok agar mudah dibaca di CSV
+        $formatStok = function($dus, $satuan) {
+            $dus = (int)$dus;
+            $satuan = (int)$satuan;
+            if ($dus == 0 && $satuan == 0) return "-";
+            $hasil = [];
+            if ($dus != 0) $hasil[] = number_format($dus) . " Dus";
+            if ($satuan != 0) $hasil[] = number_format($satuan) . " Pcs";
+            return implode(", ", $hasil);
+        };
+
+        // 1. Membuat Header CSV (satu baris saja)
+        $header = ['NO', 'NAMA PRODUK', 'ISI', 'SALDO AWAL', 'Produksi'];
+        foreach ($warehouse_columns as $wh) $header[] = 'OP Masuk ' . $wh;
+        $header[] = 'Overpack Masuk';
+        $header[] = 'TOTAL PENERIMAAN';
+        $header[] = 'Jual';
+        foreach ($warehouse_columns as $wh) $header[] = 'OP Keluar ' . $wh;
+        $header[] = 'Overpack Keluar';
+        $header[] = 'TOTAL PENGELUARAN';
+        $header[] = 'SALDO AKHIR';
+        $csv_data[] = $header;
+
+        // 2. Membuat Baris Data
+        $no = 1;
+        foreach ($report_data as $row) {
+            if ($row['error_message']) {
+                $csv_data[] = [$no++, $row['nama_produk'], $row['isi'], $row['error_message']];
+                continue;
+            }
+
+            // Kalkulasi total per baris
+            $penerimaan_dus = (int)$row['produksi_dus'] + (int)$row['op_masuk_p1_dus'] + (int)$row['op_masuk_p2_dus'] + (int)$row['op_masuk_p3_dus'] + (int)$row['overpack_masuk_dus'];
+            $penerimaan_satuan = (int)$row['produksi_satuan'] + (int)$row['op_masuk_p1_satuan'] + (int)$row['op_masuk_p2_satuan'] + (int)$row['op_masuk_p3_satuan'] + (int)$row['overpack_masuk_satuan'];
+            $pengeluaran_dus = (int)$row['jual_dus'] + (int)$row['op_keluar_p1_dus'] + (int)$row['op_keluar_p2_dus'] + (int)$row['op_keluar_p3_dus'] + (int)$row['overpack_keluar_dus'];
+            $pengeluaran_satuan = (int)$row['jual_satuan'] + (int)$row['op_keluar_p1_satuan'] + (int)$row['op_keluar_p2_satuan'] + (int)$row['op_keluar_p3_satuan'] + (int)$row['overpack_keluar_satuan'];
+            $saldo_akhir_dus = (int)$row['saldo_awal_dus'] + $penerimaan_dus - $pengeluaran_dus;
+            $saldo_akhir_satuan = (int)$row['saldo_awal_satuan'] + $penerimaan_satuan - $pengeluaran_satuan;
+
+            $data_row = [
+                $no++,
+                $row['nama_produk'],
+                $row['isi'],
+                $formatStok($row['saldo_awal_dus'], $row['saldo_awal_satuan']),
+                $formatStok($row['produksi_dus'], $row['produksi_satuan']),
+            ];
+            foreach ($warehouse_columns as $wh) $data_row[] = $formatStok($row['op_masuk_' . strtolower($wh) . '_dus'], $row['op_masuk_' . strtolower($wh) . '_satuan']);
+            $data_row[] = $formatStok($row['overpack_masuk_dus'], $row['overpack_masuk_satuan']);
+            $data_row[] = $formatStok($penerimaan_dus, $penerimaan_satuan);
+            $data_row[] = $formatStok($row['jual_dus'], $row['jual_satuan']);
+            foreach ($warehouse_columns as $wh) $data_row[] = $formatStok($row['op_keluar_' . strtolower($wh) . '_dus'], $row['op_keluar_' . strtolower($wh) . '_satuan']);
+            $data_row[] = $formatStok($row['overpack_keluar_dus'], $row['overpack_keluar_satuan']);
+            $data_row[] = $formatStok($pengeluaran_dus, $pengeluaran_satuan);
+            $data_row[] = $formatStok($saldo_akhir_dus, $saldo_akhir_satuan);
+            
+            $csv_data[] = $data_row;
+        }
+
+        // 3. Membuat Baris Total
+        $total_row = [
+            '', '', 'TOTAL KESELURUHAN',
+            $formatStok($totals['saldo_awal_dus'], $totals['saldo_awal_satuan']),
+            $formatStok($totals['produksi_dus'], $totals['produksi_satuan']),
+        ];
+        // Tambahkan placeholder untuk kolom dinamis
+        foreach ($warehouse_columns as $wh) $total_row[] = '-';
+        $total_row[] = '-'; 
+        $total_row[] = $formatStok($totals['penerimaan_dus'], $totals['penerimaan_satuan']);
+        $total_row[] = '-'; 
+        foreach ($warehouse_columns as $wh) $total_row[] = '-';
+        $total_row[] = '-'; 
+        $total_row[] = $formatStok($totals['pengeluaran_dus'], $totals['pengeluaran_satuan']);
+        $total_row[] = $formatStok($totals['saldo_akhir_dus'], $totals['saldo_akhir_satuan']);
+        $csv_data[] = $total_row;
+
+        return $csv_data;
+    }
 }

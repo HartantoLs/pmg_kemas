@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/riwayat_operstock.css" rel="stylesheet">
+<link href="<?= base_url('css/riwayat_operstock.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -145,5 +145,5 @@
 <script>
     const BASE_URL = '<?= base_url() ?>';
 </script>
-<script src="/js/riwayat_operstock.js"></script>
+<script src="<?= base_url('js/riwayat_operstock.js') ?>"></script>
 <?= $this->endSection() ?>

@@ -140,6 +140,7 @@ $routes->group('laporan', ['namespace' => 'App\Controllers'], static function ($
     // Laporan Mutasi Stok
     $routes->get('mutasi-stok', 'LaporanController::mutasiStok');
     $routes->get('getmutasidata', 'LaporanController::getMutasiData');
+    $routes->post('exportmutasicsv', 'LaporanController::exportMutasiCSV');
     
     // Laporan Stok Saat Ini
     $routes->get('stok-saat-ini', 'LaporanController::stokSaatIni');

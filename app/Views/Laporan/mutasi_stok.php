@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/laporan_mutasi_stok.css" rel="stylesheet">
+<link href="<?= base_url('css/laporan_mutasi_stok.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -91,7 +91,8 @@
 
     <div class="action-buttons">
         <button class="btn btn-secondary" onclick="exportExcel()">
-            <i class="fas fa-file-excel"></i> Export Excel
+            <i class="fas fa-file-csv"></i>
+            Export CSV
         </button>
         <button class="btn btn-primary" onclick="window.print()">
             <i class="fas fa-print"></i> Cetak Laporan
@@ -127,5 +128,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/laporan_mutasi_stok.js"></script>
+<script src="<?= base_url('js/laporan_mutasi_stok.js') ?>"></script>
 <?= $this->endSection() ?>

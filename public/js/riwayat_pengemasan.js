@@ -2,7 +2,7 @@ $(document).ready(function() {
     const modal = $('#editModal');
     const dataTableBody = $('#dataTableBody');
     const loadingState = $('#loadingState');
-    const baseUrl = "/pengemasan"; 
+    const selfUrl = `${baseUrl}/pengemasan`; 
 
     function showNotification(message, type = 'success') {
         const toastContainer = $('#notification-toast');
@@ -21,7 +21,7 @@ $(document).ready(function() {
     function fetchFilteredData() {
         loadingState.show();
         dataTableBody.html('');
-        $.post(`${baseUrl}/filterriwayat`, {
+        $.post(`${selfUrl}/filterriwayat`, {
             tanggal_mulai: $('#tanggal_mulai').val(),
             tanggal_akhir: $('#tanggal_akhir').val(),
             gudang_id: $('#gudang_id').val(),
@@ -51,7 +51,7 @@ $(document).ready(function() {
         const btn = $(this);
         btn.html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true);
         
-        $.post(`${baseUrl}/getdetailriwayat`, { id: id }, function(response) {
+        $.post(`${selfUrl}/getdetailriwayat`, { id: id }, function(response) {
             if (response.success && response.data) {
                 const data = response.data;
                 $('#editId').val(data.id);
@@ -103,7 +103,7 @@ $(document).ready(function() {
         const btn = $(this);
         btn.html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true);
         
-        $.post(`${baseUrl}/hapusriwayat`, { id: id }, function(response) {
+        $.post(`${selfUrl}/hapusriwayat`, { id: id }, function(response) {
             if (response.success) { 
                 showNotification(response.message, 'success');
                 $('#row-' + id).fadeOut(500, function() {
@@ -126,7 +126,7 @@ $(document).ready(function() {
         const submitBtn = $('#submitEdit');
         submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop('disabled', true);
         
-        $.post(`${baseUrl}/updateriwayat`, $(this).serialize(), function(response) {
+        $.post(`${selfUrl}/updateriwayat`, $(this).serialize(), function(response) {
             if (response.success) {
                 modal.hide();
                 showNotification(response.message, 'success');

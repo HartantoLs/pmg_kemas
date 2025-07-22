@@ -372,6 +372,46 @@ class LaporanController extends BaseController
         }
     }
 
+    public function exportMutasiCSV()
+    {
+        try {
+            
+            $filters = [
+                'tipe_laporan'  => $this->request->getPost('tipe_laporan') ?? 'harian',
+                'tanggal'       => $this->request->getPost('tanggal') ?? date('Y-m-d'),
+                'tanggal_mulai' => $this->request->getPost('tanggal_mulai') ?? date('Y-m-01'),
+                'tanggal_akhir' => $this->request->getPost('tanggal_akhir') ?? date('Y-m-t'),
+                'gudang_id'     => $this->request->getPost('gudang_id') ?? 'semua',
+                'produk_id'     => $this->request->getPost('produk_id') ?? 'semua',
+            ];
+
+
+            $report_data = $this->laporanMutasiModel->getMutasiStok($filters);
+            $totals = $this->laporanMutasiModel->calculateTotals($report_data);
+            $warehouse_columns = $this->laporanMutasiModel->getWarehouseColumns($filters['gudang_id']);
+
+            $csv_data = $this->laporanMutasiModel->exportToCSV($report_data, $totals, $warehouse_columns);
+
+            $filename = 'laporan_mutasi_stok_' . date('Ymd_His') . '.csv';
+            
+            $this->response->setHeader('Content-Type', 'text/csv');
+            $this->response->setHeader('Content-Disposition', 'attachment; filename="' . $filename . '"');
+            
+
+            $output = fopen('php://output', 'w');
+            foreach ($csv_data as $row) {
+                fputcsv($output, $row);
+            }
+            fclose($output);
+
+            exit();
+
+        } catch (\Exception $e) {
+            log_message('error', '[LaporanController::exportMutasiCSV] ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Gagal membuat file CSV: ' . $e->getMessage());
+        }
+    }
+
     /**
      * Halaman Laporan Stok Saat Ini
      */

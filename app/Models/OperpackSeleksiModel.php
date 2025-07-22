@@ -119,11 +119,10 @@ class OperpackSeleksiModel extends Model
             ->get()->getRowArray();
         
         if ($data) {
-            // Hitung stok yang bisa dipakai untuk edit (kembalikan sementara)
+            
             $stok_sekarang = $this->getStokBelumSeleksi($data['produk_id']);
             $data['stok_tersedia_untuk_edit'] = ($stok_sekarang['belum_seleksi'] ?? 0) + (int)$data['pcs_aman'] + (int)$data['pcs_curah'];
 
-            // Ambil juga stok rusak belum seleksi dari view_stok_overpack
             $stok = $this->db->table('view_stok_overpack')
                 ->select('belum_seleksi')
                 ->where('id_produk', $data['produk_id'])
@@ -160,7 +159,7 @@ class OperpackSeleksiModel extends Model
             
             // Validasi jika ada produk yang sudah dikemas ulang
             $selisih_aman = $new_aman - (int)$old_data['pcs_aman'];
-            if ($selisih_aman < 0) { // Jika jumlah pcs aman dikurangi
+            if ($selisih_aman < 0) {
                 $stok_siap_repack_data = $this->getStokSiapRepack($old_data['produk_id']);
                 $stok_siap_repack = (int)($stok_siap_repack_data['stok_siap_repack'] ?? 0);
                 

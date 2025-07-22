@@ -49,3 +49,585 @@ FROM `produk`', [], false)
 INFO - 2025-07-22 01:01:13 --> Loading stock opname data for: 2025-07
 INFO - 2025-07-22 01:01:13 --> Found 72 existing records for 2025-07
 INFO - 2025-07-22 01:01:13 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+CRITICAL - 2025-07-22 01:54:48 --> ErrorException: Undefined variable $options
+[Method: GET, Route: pengemasan/getgudang]
+in APPPATH\Controllers\PengemasanController.php on line 60.
+ 1 APPPATH\Controllers\PengemasanController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $options', 'C:\\xampp\\htdocs\\pmg_produk\\app\\Controllers\\PengemasanController.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengemasanController->getGudang()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengemasanController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-22 02:25:34 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:25:34 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:25:34 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:26:04 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:26:04 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:26:04 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:26:52 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:26:52 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:26:52 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:26:57 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:26:57 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:26:57 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:27:32 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:27:32 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:27:32 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:27:38 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:27:38 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:27:38 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:27:47 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:27:47 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:27:47 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:28:36 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:28:36 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:28:36 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:30:01 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:30:01 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:30:01 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:43:34 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:43:34 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:43:34 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:45:11 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:45:11 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:45:11 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:48:15 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:48:15 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:48:15 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:48:20 --> Saving opname data for date: 2025-07-01, items count: 18
+INFO - 2025-07-22 02:48:20 --> Database transaction started
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P15-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P15-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P15-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P15-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P18-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P18-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P18-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P18-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P17-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P17-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P17-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P17-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":4,"jumlah_dus_opname":2,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P16-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P16-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P16-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P16-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P7-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P7-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P7-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P7-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P5-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":30,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P5-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P5-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P5-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P4-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":1,"jumlah_dus_opname":7,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P4-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":2,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P4-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":3,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P4-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P2-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":1,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P2-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P2-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P2-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P3-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P3-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P3-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P3-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P1-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":1,"jumlah_dus_opname":67,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P1-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P1-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P1-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P6-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P6-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P6-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P6-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P12-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P12-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P12-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P12-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P11-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P11-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P11-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P11-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P9-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P9-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P9-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P9-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P10-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P10-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P10-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P10-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P8-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P8-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P8-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P8-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P13-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P13-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P13-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P13-G3
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P14-G4
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P14-G1
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P14-G2
+DEBUG - 2025-07-22 02:48:20 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:20 --> Successfully saved P14-G3
+INFO - 2025-07-22 02:48:20 --> Starting recalculation for following months
+INFO - 2025-07-22 02:48:20 --> Recalculation completed for months: August 2025
+INFO - 2025-07-22 02:48:20 --> Database transaction committed successfully
+INFO - 2025-07-22 02:48:20 --> SaveOpname completed successfully. Saved: 72, Errors: 0, Recalculated months: 1
+INFO - 2025-07-22 02:48:27 --> Saving opname data for date: 2025-07-01, items count: 18
+INFO - 2025-07-22 02:48:27 --> Database transaction started
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P15-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P15-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P15-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P15-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P18-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P18-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P18-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P18-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P17-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P17-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P17-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P17-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":4,"jumlah_dus_opname":5,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P16-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P16-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P16-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P16-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P7-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P7-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P7-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P7-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P5-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":30,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P5-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P5-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P5-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P4-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":1,"jumlah_dus_opname":7,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P4-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":2,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P4-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":3,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P4-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P2-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":1,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P2-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P2-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P2-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P3-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P3-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P3-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P3-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P1-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":1,"jumlah_dus_opname":67,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P1-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P1-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P1-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P6-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P6-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P6-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P6-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P12-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P12-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P12-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P12-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P11-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P11-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P11-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P11-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P9-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P9-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P9-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P9-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P10-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P10-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P10-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P10-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P8-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P8-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P8-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P8-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P13-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P13-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P13-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P13-G3
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P14-G4
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P14-G1
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P14-G2
+DEBUG - 2025-07-22 02:48:27 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:48:27 --> Successfully saved P14-G3
+INFO - 2025-07-22 02:48:27 --> Starting recalculation for following months
+INFO - 2025-07-22 02:48:27 --> Recalculation completed for months: August 2025
+INFO - 2025-07-22 02:48:27 --> Database transaction committed successfully
+INFO - 2025-07-22 02:48:27 --> SaveOpname completed successfully. Saved: 72, Errors: 0, Recalculated months: 1
+INFO - 2025-07-22 02:49:57 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:49:57 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:49:57 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:50:09 --> Saving opname data for date: 2025-07-01, items count: 18
+INFO - 2025-07-22 02:50:09 --> Database transaction started
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P15-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P15-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P15-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":15,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P15-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P18-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P18-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P18-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":18,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P18-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P17-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P17-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P17-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":17,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P17-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":4,"jumlah_dus_opname":5,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P16-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":1,"jumlah_dus_opname":7,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P16-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":2,"jumlah_dus_opname":8,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P16-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":16,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P16-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P7-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P7-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P7-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":7,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P7-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P5-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":30,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P5-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P5-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":5,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P5-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P4-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":1,"jumlah_dus_opname":7,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P4-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":2,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P4-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":4,"gudang_id":3,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P4-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P2-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":1,"jumlah_dus_opname":25,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P2-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P2-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":2,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P2-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P3-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P3-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P3-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":3,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P3-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P1-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":1,"jumlah_dus_opname":67,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P1-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P1-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":1,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P1-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P6-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P6-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P6-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":6,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P6-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P12-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P12-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P12-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":12,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P12-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P11-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P11-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P11-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":11,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P11-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P9-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P9-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P9-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":9,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P9-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P10-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P10-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P10-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":10,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P10-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P8-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P8-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P8-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":8,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P8-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P13-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P13-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P13-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":13,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P13-G3
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":4,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P14-G4
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":1,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P14-G1
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":2,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P14-G2
+DEBUG - 2025-07-22 02:50:09 --> Attempting to save item: {"tanggal_opname":"2025-07-01","produk_id":14,"gudang_id":3,"jumlah_dus_opname":0,"jumlah_satuan_opname":0,"catatan":""}
+DEBUG - 2025-07-22 02:50:09 --> Successfully saved P14-G3
+INFO - 2025-07-22 02:50:09 --> Starting recalculation for following months
+INFO - 2025-07-22 02:50:09 --> Recalculation completed for months: August 2025
+INFO - 2025-07-22 02:50:09 --> Database transaction committed successfully
+INFO - 2025-07-22 02:50:09 --> SaveOpname completed successfully. Saved: 72, Errors: 0, Recalculated months: 1
+INFO - 2025-07-22 02:53:02 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:53:02 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:53:02 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:53:24 --> Calculating beginning stock for 2025-06, using previous month: 2025-05
+INFO - 2025-07-22 02:53:24 --> Found 0 opname records for 2025-05
+INFO - 2025-07-22 02:53:24 --> Found 0 mutation records for period 2025-05-01 to 2025-05-31
+INFO - 2025-07-22 02:53:24 --> Beginning stock calculation completed successfully
+INFO - 2025-07-22 02:53:32 --> Calculating beginning stock for 2025-07, using previous month: 2025-06
+INFO - 2025-07-22 02:53:32 --> Found 72 opname records for 2025-06
+INFO - 2025-07-22 02:53:32 --> Found 2 mutation records for period 2025-06-01 to 2025-06-30
+INFO - 2025-07-22 02:53:32 --> Beginning stock calculation completed successfully
+INFO - 2025-07-22 02:53:41 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:53:41 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:53:41 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:56:52 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:56:52 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:56:52 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:58:52 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:58:52 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:58:52 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:58:55 --> Loading stock opname data for: 2025-07
+INFO - 2025-07-22 02:58:55 --> Found 72 existing records for 2025-07
+INFO - 2025-07-22 02:58:55 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+INFO - 2025-07-22 02:58:59 --> Loading stock opname data for: 2025-06
+INFO - 2025-07-22 02:58:59 --> Found 72 existing records for 2025-06
+INFO - 2025-07-22 02:58:59 --> Data loaded successfully - Gudang: 4, Produk: 18, Mode: edit
+ERROR - 2025-07-22 03:26:56 --> mysqli_sql_exception: Duplicate entry '1212' for key 'uk_surat_jalan' in C:\xampp\htdocs\pmg_produk\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\pmg_produk\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\pmg_produk\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\pmg_produk\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\pmg_produk\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\pmg_produk\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pmg_produk\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pmg_produk\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\pmg_produk\app\Models\PenjualanModel.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\pmg_produk\app\Controllers\PenjualanController.php(71): App\Models\PenjualanModel->simpanPenjualan(Array)
+#9 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(933): App\Controllers\PenjualanController->simpan()
+#10 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+#11 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pmg_produk\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pmg_produk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\pmg_produk\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-07-22 03:27:06 --> mysqli_sql_exception: Duplicate entry '121221' for key 'uk_surat_jalan' in C:\xampp\htdocs\pmg_produk\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\pmg_produk\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\pmg_produk\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\pmg_produk\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\pmg_produk\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\pmg_produk\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\pmg_produk\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\pmg_produk\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\pmg_produk\app\Models\PenjualanModel.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\pmg_produk\app\Controllers\PenjualanController.php(71): App\Models\PenjualanModel->simpanPenjualan(Array)
+#9 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(933): App\Controllers\PenjualanController->simpan()
+#10 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenjualanController))
+#11 C:\xampp\htdocs\pmg_produk\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\pmg_produk\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\pmg_produk\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\pmg_produk\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-07-22 03:34:29 --> Error in printLaporan: Undefined array key "selected_date_formatted"
+CRITICAL - 2025-07-22 03:34:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/html/error_general.php"
+[Method: GET, Route: laporan/printlaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/html/error_general.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('errors/html/error_general', [], true)
+ 3 APPPATH\Controllers\LaporanController.php(146): view('errors/html/error_general', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LaporanController->printLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LaporanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-07-22 03:58:03 --> [LaporanController::exportMutasiCSV] Undefined property: App\Controllers\LaporanController::$laporanMutasiModel
+DEBUG - 2025-07-22 03:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-22 03:58:06 --> [LaporanController::exportMutasiCSV] Undefined property: App\Controllers\LaporanController::$laporanMutasiModel
+DEBUG - 2025-07-22 03:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-22 04:04:19 --> [LaporanController::exportMutasiCSV] Undefined property: App\Controllers\LaporanController::$laporanMutasiModel
+DEBUG - 2025-07-22 04:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-22 04:04:22 --> [LaporanController::exportMutasiCSV] Undefined property: App\Controllers\LaporanController::$laporanMutasiModel
+DEBUG - 2025-07-22 04:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

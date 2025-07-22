@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_operpack_kemas_ulang.css" rel="stylesheet">
+<link href="<?= base_url('css/form_operpack_kemas_ulang.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>

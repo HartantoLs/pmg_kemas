@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  const baseUrl = window.location.origin
+  const selfUrl = `${baseUrl}/operpack_seleksi`;
   const modal = $("#editModal")
   const loadingState = $("#loadingState")
   const dataTableBody = $("#dataTableBody")
@@ -15,7 +15,7 @@ $(document).ready(() => {
       produk_id: $("#produk_id").val(),
     }
 
-    $.post(baseUrl + "/operpack_seleksi/filter-data", formData)
+    $.post(selfUrl + "/filter-data", formData)
       .done((response) => {
         dataTableBody.html(response)
         updateRowCount()
@@ -68,7 +68,7 @@ $(document).ready(() => {
     if (!id) return alert("ID tidak ditemukan!")
 
     $.post(
-      baseUrl + "/operpack_seleksi/get-detail",
+      selfUrl + "/get-detail",
       { id: id },
       (response) => {
         if (response.success && response.data) {
@@ -101,7 +101,7 @@ $(document).ready(() => {
     btn.html('<i class="fas fa-spinner fa-spin"></i>').prop("disabled", true)
 
     $.post(
-      baseUrl + "/operpack_seleksi/delete-seleksi",
+      selfUrl + "/delete-seleksi",
       { id: id },
       (response) => {
         if (response.success) {
@@ -129,7 +129,7 @@ $(document).ready(() => {
     submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop("disabled", true)
 
     $.post(
-      baseUrl + "/operpack_seleksi/update-seleksi",
+      selfUrl + "/update-seleksi",
       $(this).serialize(),
       (response) => {
         if (response.success) {

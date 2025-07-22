@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/laporan_overpack.css" rel="stylesheet">
+<link href="<?= base_url('css/laporan_overpack.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -80,5 +80,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/laporan_overpack.js"></script>
+<script src="<?= base_url('js/laporan_overpack.js') ?>"></script>
 <?= $this->endSection() ?>

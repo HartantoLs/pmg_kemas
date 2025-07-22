@@ -1,5 +1,5 @@
 ;(() => {
-  const selfUrl = "/fisik_harian"
+  const selfUrl = `${baseUrl}/fisik_harian`;
   const $ = window.jQuery // Declare the $ variable
 
   function showLoading() {

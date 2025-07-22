@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let itemIndex = 0;
-    const baseUrl = "/penjualan"; // Sesuaikan dengan base URL route Anda
-
+    const selfUrl = `${baseUrl}/penjualan`;
+    
     function createNewRow(index) {
         return `
             <div class="item-row anim-fade-in" data-index="${index}">
@@ -56,8 +56,8 @@ $(document).ready(function() {
         }
 
         stockInfo.html('<i class="fas fa-spinner fa-spin"></i> Mengecek...').removeClass('available warning error').addClass('loading');
-        
-        $.getJSON(`${baseUrl}/getstokpadatanggal`, { id_produk, id_gudang, tanggal })
+
+        $.getJSON(`${selfUrl}/getstokpadatanggal`, { id_produk, id_gudang, tanggal })
             .done(function(stok) {
                 const stokText = `Stok: ${stok.dus} Dus, ${stok.satuan} Satuan`;
                 stockInfo.html(`<i class="fas fa-check-circle"></i> ${stokText}`).removeClass('loading').addClass('available').data('stok', stok);
@@ -127,7 +127,7 @@ $(document).ready(function() {
         
         row.find('.dus-input-group, .satuan-input-group').hide();
         if(id_produk) {
-            $.getJSON(`${baseUrl}/getprodukinfo`, { id_produk }).done(info => {
+            $.getJSON(`${selfUrl}/getprodukinfo`, { id_produk }).done(info => {
                 if (info && info.satuan_per_dus > 1) {
                     row.find('.dus-input-group').show();
                 }
@@ -148,7 +148,7 @@ $(document).ready(function() {
         btn.html('<span class="spinner"></span> Menyimpan...').prop('disabled', true);
         
         $.ajax({
-            url: `${baseUrl}/simpan`,
+            url: `${selfUrl}/simpan`,
             type: 'POST',
             data: $(this).serialize(),
             dataType: 'json',

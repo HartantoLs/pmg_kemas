@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/admin_panel.css" rel="stylesheet">
+<link href="<?= base_url('css/admin_panel.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -145,8 +145,8 @@
                         <select id="tipe_gudang" name="tipe_gudang" required>
                             <option value="">-- Pilih Tipe --</option>
                             <option value="Bahan Baku">Bahan Baku</option>
-                            <option value="Produk Jadi">Produk Jadi</option>
-                            <option value="Overpack">Overpack</option>
+                            <option value="Produksi">Produksi</option>
+                            <option value="Return">Return</option>
                         </select>
                     </div>
                     <button type="submit" class="btn-submit">
@@ -254,5 +254,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/admin_panel.js"></script>
+<script src="<?= base_url('js/admin_panel.js') ?>"></script>
 <?= $this->endSection() ?>

@@ -2,7 +2,7 @@ $(document).ready(function() {
     const modal = $('#editModal');
     const dataTableBody = $('#dataTableBody');
     const loadingState = $('#loadingState');
-    const baseUrl = "/penjualan";
+    const selfUrl = `${baseUrl}/penjualan`; 
 
     let nilaiLama = { dus: 0, satuan: 0 };
     let stokTersediaSaatItu = { dus: 0, satuan: 0 };
@@ -24,7 +24,7 @@ $(document).ready(function() {
     function fetchFilteredData() {
         loadingState.show();
         dataTableBody.html('');
-        $.post(`${baseUrl}/filterriwayat`, {
+        $.post(`${selfUrl}/filterriwayat`, {
             tanggal_mulai: $('#tanggal_mulai').val(),
             tanggal_akhir: $('#tanggal_akhir').val(),
             gudang_id: $('#gudang_id').val(),
@@ -64,7 +64,7 @@ $(document).ready(function() {
         const btn = $(this);
         btn.html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true);
         
-        $.post(`${baseUrl}/getdetailriwayat`, { id: id }, function(response) {
+        $.post(`${selfUrl}/getdetailriwayat`, { id: id }, function(response) {
             if (response.success && response.data) {
                 const data = response.data;
                 $('#editDetailId').val(data.id);
@@ -113,7 +113,7 @@ $(document).ready(function() {
         const btn = $(this);
         btn.html('<i class="fas fa-spinner fa-spin"></i>').prop('disabled', true);
         
-        $.post(`${baseUrl}/hapusriwayat`, { id: id }, function(response) {
+        $.post(`${selfUrl}/hapusriwayat`, { id: id }, function(response) {
             if (response.success) {
                 $('#row-' + id).fadeOut(500, function() { $(this).remove(); updateRowCount(); });
                 showNotification(response.message, 'success');
@@ -131,7 +131,7 @@ $(document).ready(function() {
         const submitBtn = $('#submitEdit');
         submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop('disabled', true);
         
-        $.post(`${baseUrl}/updateriwayat`, $(this).serialize(), function(response) {
+        $.post(`${selfUrl}/updateriwayat`, $(this).serialize(), function(response) {
             if (response.success) {
                 modal.hide();
                 showNotification(response.message, 'success');

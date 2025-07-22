@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_operpack_kerusakan.css" rel="stylesheet">
+<link href="<?= base_url('css/form_operpack_kerusakan.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -135,5 +135,5 @@ const produkOptions = `<?php foreach ($produk_list as $produk): ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/form_operpack_kerusakan.js"></script>
+<script src="<?= base_url('js/form_operpack_kerusakan.js') ?>"></script>
 <?= $this->endSection() ?>

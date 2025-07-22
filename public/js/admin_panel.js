@@ -1,9 +1,8 @@
 let bahanBakuCounter = 0
 let barangList = []
 const $ = window.jQuery
-
+const selfUrl = `${baseUrl}/admin`;
 $(document).ready(() => {
-  // Load barang list for dropdown
   loadBarangList()
 })
 
@@ -14,10 +13,8 @@ function showForm() {
   $(".data-section").hide()
 
   if (dataType) {
-    // Show the selected section with animation
     $(`#${dataType}Section`).fadeIn(300)
 
-    // Load data for the selected type
     switch (dataType) {
       case "gudang":
         loadGudangList()
@@ -42,7 +39,6 @@ function closeModal(modalId) {
   $(`#${modalId}`).fadeOut(300)
   $("body").removeClass("modal-open")
 
-  // Reset form when closing
   const formId = modalId.replace("Modal", "")
   resetForm(formId)
 }
@@ -58,7 +54,7 @@ $(document).on("click", ".modal", function (e) {
 // Gudang Functions
 function loadGudangList() {
   showLoading()
-  $.get("/admin/getgudanglist")
+  $.get(`${selfUrl}/getgudanglist`)
     .done((response) => {
       if (response.success) {
         let tbody = ""
@@ -112,7 +108,7 @@ function editGudang(id, nama, tipe) {
 function deleteGudang(id) {
   if (confirm("Apakah Anda yakin ingin menghapus gudang ini?")) {
     showLoading()
-    $.post("/admin/deletegudang", { id: id })
+    $.post(`${selfUrl}/deletegudang`, { id: id })
       .done((response) => {
         if (response.success) {
           showAlert("success", response.message)
@@ -134,7 +130,7 @@ $("#formGudang").on("submit", function (e) {
   e.preventDefault()
   showLoading()
 
-  $.post("/admin/savegudang", $(this).serialize())
+  $.post(`${selfUrl}/savegudang`, $(this).serialize())
     .done((response) => {
       if (response.success) {
         showAlert("success", response.message)
@@ -155,7 +151,7 @@ $("#formGudang").on("submit", function (e) {
 // Produk Functions
 function loadProdukList() {
   showLoading()
-  $.get("/admin/getproduklist")
+  $.get(`${selfUrl}/getproduklist`)
     .done((response) => {
       if (response.success) {
         let tbody = ""
@@ -209,7 +205,7 @@ function editProduk(id, nama, satuan) {
 function deleteProduk(id) {
   if (confirm("Apakah Anda yakin ingin menghapus produk ini?")) {
     showLoading()
-    $.post("/admin/deleteproduk", { id: id })
+    $.post(`${selfUrl}/deleteproduk`, { id: id })
       .done((response) => {
         if (response.success) {
           showAlert("success", response.message)
@@ -231,7 +227,7 @@ $("#formProduk").on("submit", function (e) {
   e.preventDefault()
   showLoading()
 
-  $.post("/admin/saveproduk", $(this).serialize())
+  $.post(`${selfUrl}/saveproduk`, $(this).serialize())
     .done((response) => {
       if (response.success) {
         showAlert("success", response.message)
@@ -252,7 +248,7 @@ $("#formProduk").on("submit", function (e) {
 // Jenis Produksi Functions
 function loadJenisProduksiList() {
   showLoading()
-  $.get("/admin/getjenisproduksilist")
+  $.get(`${selfUrl}/getjenisproduksilist`)
     .done((response) => {
       if (response.success) {
         let tbody = ""
@@ -298,7 +294,7 @@ function loadJenisProduksiList() {
 }
 
 function loadBarangList() {
-  $.get("/admin/getbaranglist")
+  $.get(`${selfUrl}/getbaranglist`)
     .done((response) => {
       if (response.success) {
         barangList = response.data
@@ -352,7 +348,7 @@ function removeBahanBaku(id) {
 
 function editJenisProduksi(id) {
   showLoading()
-  $.get("/admin/getjenisproduksidetail", { id: id })
+  $.get(`${selfUrl}/getjenisproduksidetail`, { id: id })
     .done((response) => {
       if (response.success) {
         const data = response.data
@@ -398,7 +394,7 @@ function deleteJenisProduksi(id) {
     )
   ) {
     showLoading()
-    $.post("/admin/deletejenisproduksi", { id: id })
+    $.post(`${selfUrl}/deletejenisproduksi`, { id: id })
       .done((response) => {
         if (response.success) {
           showAlert("success", response.message)
@@ -436,7 +432,7 @@ $("#formJenisProduksi").on("submit", function (e) {
   const formData = $(this).serialize() + "&bahan_baku=" + encodeURIComponent(JSON.stringify(bahanBaku))
 
   showLoading()
-  $.post("/admin/savejenisproduksi", formData)
+  $.post(`${selfUrl}/savejenisproduksi`, formData)
     .done((response) => {
       if (response.success) {
         showAlert("success", response.message)
@@ -470,7 +466,7 @@ function resetForm(type) {
       $("#jenis_produksi_id").val("")
       $("#is_edit").val("0")
       $("#bahanBakuContainer").empty()
-      $("#satuanPerDusGroup").show() // Show satuan per dus field for add mode
+      $("#satuanPerDusGroup").show()
       bahanBakuCounter = 0
       break
   }

@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  const baseUrl = "/laporan"
+  const selfUrl = `${baseUrl}/laporan`;
 
   function formatStokJS(dus, satuan) {
     dus = Number.parseInt(dus) || 0
@@ -221,7 +221,7 @@ $(document).ready(() => {
     const formData = $("#filterForm").serialize()
 
     $.ajax({
-      url: `${baseUrl}/getmutasidata`,
+      url: `${selfUrl}/getmutasidata`,
       type: "GET",
       data: formData,
       dataType: "json",
@@ -259,12 +259,43 @@ $(document).ready(() => {
     fetchReportData()
   })
 
-  // Export function
-  function exportExcel() {
-    alert("Fitur export Excel akan segera tersedia!")
+  function exportCSV() {
+      // 1. Tentukan URL tujuan untuk ekspor.
+      const exportUrl = `${selfUrl}/exportmutasicsv`;
+
+      // 2. Buat elemen form sementara di dalam memori.
+      const form = $("<form>", {
+          method: "POST", // Penting: Gunakan metode POST
+          action: exportUrl,
+      });
+
+      // 3. Ambil semua data filter dari form utama Anda.
+      //    Pastikan form filter Anda memiliki id="filterForm".
+      const formArray = $("#filterForm").serializeArray();
+
+      // 4. Salin setiap filter ke dalam form sementara sebagai input tersembunyi.
+      formArray.forEach((item) => {
+          form.append(
+              $("<input>", {
+                  type: "hidden",
+                  name: item.name,
+                  value: item.value,
+              }),
+          );
+      });
+
+      // 5. Tambahkan form sementara ke halaman, kirim, lalu langsung hapus.
+      $("body").append(form);
+      form.submit();
+      form.remove();
+
+      // 6. Beri notifikasi kepada pengguna (opsional).
+      console.log("Memulai proses export CSV...");
+      // Jika Anda punya fungsi notifikasi, panggil di sini.
+      // contoh: showNotification("Export CSV dimulai...", "success");
   }
 
-  window.exportExcel = exportExcel
+  window.exportExcel = exportCSV;
 
   // Initial load
   fetchReportData()

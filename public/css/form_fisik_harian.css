@@ -22,7 +22,7 @@
     box-sizing: border-box;
 }
 
-/* Smooth scroll for entire page */
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
@@ -35,7 +35,6 @@ body {
     min-height: 100vh;
     margin:0;
     padding:0;
-    /* Subtle background animation */
     background-attachment: fixed;
     animation: breathe 8s ease-in-out infinite;
 }

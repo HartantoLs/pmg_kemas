@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_penjualan.css" rel="stylesheet">
+<link href="<?= base_url('css/form_penjualan.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -79,5 +79,5 @@
     const produkOptions = `<?php foreach ($produk_list as $p) { echo "<option value='{$p['id_produk']}'>".esc($p['nama_produk'])."</option>"; } ?>`;
     const gudangOptions = `<?php foreach ($gudang_list as $g) { echo "<option value='{$g['id_gudang']}'>".esc($g['nama_gudang'])."</option>"; } ?>`;
 </script>
-<script src="/js/form_penjualan.js"></script>
+<script src="<?= base_url('js/form_penjualan.js') ?>"></script>
 <?= $this->endSection() ?>

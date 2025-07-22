@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/laporan_stok_saat_ini.css" rel="stylesheet">
+<link href="<?= base_url('css/laporan_stok_saat_ini.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -117,11 +117,11 @@
     </div>
 </div>
 
-<div class="loading-overlay" id="loading-overlay">
-    <div class="loading-spinner"></div>
+<div class="loading" id="loadingState">
+    <i class="fas fa-spinner fa-spin fa-2x"></i> Memuat data...
 </div>
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/laporan_stok_saat_ini.js"></script>
+<script src="<?= base_url('js/laporan_stok_saat_ini.js') ?>"></script>
 <?= $this->endSection() ?>

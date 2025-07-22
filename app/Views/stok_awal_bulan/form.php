@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_stok_awal_bulan.css" rel="stylesheet">
+<link href="<?= base_url('css/form_stok_awal_bulan.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -16,7 +16,7 @@
             <h2><i class="fas fa-calendar-alt"></i> Pilih Periode Opname</h2>
         </div>
         <div class="card-body">
-            <form method="GET" action="/stok_awal_bulan/form">
+            <form method="GET" action="<?= base_url('/stok_awal_bulan/form') ?>">
                 <div class="form-grid">
                     <div class="form-group">
                         <label for="tanggal_opname_month" class="form-label">
@@ -184,5 +184,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/form_stok_awal_bulan.js"></script>
+<script src="<?= base_url('js/form_stok_awal_bulan.js') ?>"></script>
 <?= $this->endSection() ?>

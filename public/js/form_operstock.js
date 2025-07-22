@@ -1,6 +1,6 @@
 $(document).ready(() => {
   let itemIndex = 0
-  const baseUrl = "/operstock"
+  const selfUrl = `${baseUrl}/operstock`
 
   function createNewRow(index) {
     return `
@@ -69,7 +69,7 @@ $(document).ready(() => {
     if (id_produk && id_gudang_asal && id_gudang_tujuan && tanggal) {
       stockComp.html('<i class="fas fa-spinner fa-spin"></i> Mengecek...')
 
-      $.getJSON(`${baseUrl}/getbothstocks`, {
+      $.getJSON(`${selfUrl}/getbothstocks`, {
         id_produk,
         id_gudang_asal,
         id_gudang_tujuan,
@@ -155,7 +155,7 @@ $(document).ready(() => {
       $("#warehouseFlow").show()
 
       // Load transfer history
-      $.getJSON(`${baseUrl}/gettransferhistory`, {
+      $.getJSON(`${selfUrl}/gettransferhistory`, {
         id_gudang_asal: asalId,
         id_gudang_tujuan: tujuanId,
       }).done((history) => {
@@ -273,7 +273,7 @@ $(document).ready(() => {
     btn.html('<span class="spinner"></span> Menyimpan...').prop("disabled", true)
 
     $.ajax({
-      url: `${baseUrl}/simpan`,
+      url: `${selfUrl}/simpan`,
       type: "POST",
       data: $(this).serialize(),
       dataType: "json",

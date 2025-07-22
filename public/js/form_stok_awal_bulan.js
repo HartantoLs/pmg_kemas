@@ -1,5 +1,5 @@
 ;(($) => {
-  const selfUrl = "/stok_awal_bulan"
+  const selfUrl = `${baseUrl}/stok_awal _bulan`;
 
   function showAlert(type, message, duration = 5000) {
     const alert = $("#form-messages")

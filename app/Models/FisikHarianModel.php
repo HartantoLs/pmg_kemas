@@ -24,7 +24,6 @@ class FisikHarianModel extends Model
         $data['selisih_dus'] = $data['fisik_dus'] - $data['sistem_dus'];
         $data['selisih_satuan'] = $data['fisik_satuan'] - $data['sistem_satuan'];
 
-        // Gunakan raw query dengan ON DUPLICATE KEY UPDATE seperti kode lama
         $sql = "INSERT INTO log_perbandingan_stok 
                 (tanggal_cek, id_produk, id_gudang, fisik_dus, fisik_satuan, sistem_dus, sistem_satuan, selisih_dus, selisih_satuan) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) 

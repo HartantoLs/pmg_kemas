@@ -2,7 +2,7 @@
 const $ = window.jQuery
 
 $(document).ready(() => {
-  const baseUrl = window.location.origin
+  const selfUrl = `${baseUrl}/operpack_seleksi`
   let currentStok = 0
 
   function showLoading() {
@@ -33,7 +33,7 @@ $(document).ready(() => {
     }
 
     showLoading()
-    $.getJSON(baseUrl + "/operpack_seleksi/get-stok-seleksi", { id_produk: idProduk })
+    $.getJSON(selfUrl + "/get-stok-seleksi", { id_produk: idProduk })
       .done((data) => {
         currentStok = data.belum_seleksi < 0 ? 0 : data.belum_seleksi
 
@@ -196,7 +196,7 @@ $(document).ready(() => {
     showLoading()
 
     $.ajax({
-      url: baseUrl + "/operpack_seleksi/simpan-seleksi",
+      url: selfUrl + "/simpan-seleksi",
       type: "POST",
       data: form.serialize(),
       dataType: "json",

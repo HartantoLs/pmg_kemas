@@ -2,7 +2,7 @@ $(document).ready(() => {
   let itemIndex = 0
   let selectedGudang = null
   let selectedPenjualan = null
-  const baseUrl = "/operpack_kerusakan"
+  const selfUrl = `${baseUrl}/operpack_kerusakan`
   // Template Input Asal
   const asalEksternalHtml = `
         <label for="asal">
@@ -101,7 +101,7 @@ $(document).ready(() => {
     penjualanInfo.removeClass("available error").addClass("loading")
     penjualanInfo.html('<i class="fas fa-spinner fa-spin"></i> Memvalidasi nomor surat jalan...')
 
-    $.get(`${baseUrl}/validatepenjualan`, {
+    $.get(`${selfUrl}/validatepenjualan`, {
       no_surat_jalan: noSuratJalan,
     })
       .done((data) => {
@@ -162,7 +162,7 @@ $(document).ready(() => {
       .addClass("neutral")
       .html('<i class="fas fa-spinner fa-spin"></i> Validasi...')
 
-    $.get(`${baseUrl}/getstokproduk`, {
+    $.get(`${selfUrl}/getstokproduk`, {
       id_gudang: selectedGudang,
       id_produk: idProduk,
       tanggal: tanggal,
@@ -231,7 +231,7 @@ $(document).ready(() => {
       .addClass("neutral")
       .html('<i class="fas fa-spinner fa-spin"></i> Validasi...')
 
-    $.get(`${baseUrl}/getpenjualanproduk`, {
+    $.get(`${selfUrl}/getpenjualanproduk`, {
       no_surat_jalan: selectedPenjualan.no_surat_jalan,
       id_produk: idProduk,
     })
@@ -331,7 +331,7 @@ $(document).ready(() => {
       $("#sourceIndicator").show()
 
       // Load damage history
-      $.getJSON(`${baseUrl}/getdamagehistory`, {
+      $.getJSON(`${selfUrl}/getdamagehistory`, {
         kategori_asal: kategori,
         asal: asal,
       }).done((history) => {
@@ -373,7 +373,7 @@ $(document).ready(() => {
             `)
 
       // Load gudang via AJAX
-      $.get(`${baseUrl}/getgudanginternal`)
+      $.get(`${selfUrl}/getgudanginternal`)
         .done((data) => {
           let options = '<option value="">-- Pilih Gudang --</option>'
           data.forEach((gudang) => {
@@ -560,7 +560,7 @@ $(document).ready(() => {
     btn.html('<span class="spinner"></span> Menyimpan...').prop("disabled", true)
 
     $.ajax({
-      url: `${baseUrl}/simpan`,
+      url: `${selfUrl}/simpan`,
       type: "POST",
       data: $(this).serialize(),
       dataType: "json",

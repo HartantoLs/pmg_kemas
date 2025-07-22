@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  const baseUrl = "/laporan"
+  const selfUrl = `${baseUrl}/laporan`;
 
   function formatStok(pcs, satuan_per_dus) {
     if (pcs == 0) return "-"
@@ -239,7 +239,7 @@ $(document).ready(() => {
     const formData = $("#filterForm").serialize()
 
     $.ajax({
-      url: `${baseUrl}/getoverpackdata`,
+      url: `${selfUrl}/getoverpackdata`,
       type: "GET",
       data: formData,
       dataType: "json",
@@ -282,7 +282,7 @@ $(document).ready(() => {
     // Create a form and submit it
     const form = $("<form>", {
       method: "POST",
-      action: `${baseUrl}/exportoverpackcsv`,
+      action: `${selfUrl}/exportoverpackcsv`,
     })
 
     // Add form data as hidden inputs

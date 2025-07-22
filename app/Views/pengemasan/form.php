@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_pengemasan.css" rel="stylesheet">
+<link href="<?= base_url('css/form_pengemasan.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -44,5 +44,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/form_pengemasan.js"></script>
+<script src="<?= base_url('js/form_pengemasan.js') ?>"></script>
 <?= $this->endSection() ?>

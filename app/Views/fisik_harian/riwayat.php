@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/riwayat_fisik_harian.css" rel="stylesheet">
+<link href="<?= base_url('css/riwayat_fisik_harian.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -88,5 +88,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/riwayat_fisik_harian.js"></script>
+<script src="<?= base_url('js/riwayat_fisik_harian.js') ?>"></script>
 <?= $this->endSection() ?>

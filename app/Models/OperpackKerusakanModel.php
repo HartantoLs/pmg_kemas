@@ -286,7 +286,6 @@ class OperpackKerusakanModel extends Model
                     [$selisih_dus, $selisih_satuan, $old_data['produk_id'], $old_data['gudang_asal_id']]
                 );
             }
-            // Untuk kategori Eksternal, tidak perlu validasi stok karena tidak mempengaruhi stok internal
             
             // Update detail kerusakan
             $this->db->table('operpack_kerusakan_detail')
@@ -335,7 +334,6 @@ class OperpackKerusakanModel extends Model
                     ]
                 );
             }
-            // Untuk kategori Eksternal, tidak perlu mengembalikan stok
             
             // Hapus detail kerusakan
             $this->db->table('operpack_kerusakan_detail')->where('id', $id)->delete();

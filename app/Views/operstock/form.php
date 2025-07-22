@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/form_operstock.css" rel="stylesheet">
+<link href="<?= base_url('css/form_operstock.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -105,5 +105,5 @@
     const BASE_URL = '<?= base_url() ?>';
     const produkOptions = `<?php foreach ($produk_list as $p) { echo "<option value='{$p['id_produk']}' data-satuan-per-dus='{$p['satuan_per_dus']}'>".esc($p['nama_produk'])."</option>"; } ?>`;
 </script>
-<script src="/js/form_operstock.js"></script>
+<script src="<?= base_url('js/form_operstock.js') ?>"></script>
 <?= $this->endSection() ?>

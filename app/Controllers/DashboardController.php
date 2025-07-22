@@ -26,7 +26,6 @@ class DashboardController extends BaseController
         elseif ($jam >= 15 && $jam < 18) { $sapaan = "Selamat Sore"; } 
         else { $sapaan = "Selamat Malam"; }
 
-        // Siapkan data untuk dikirim ke view
         $data = [
             'page_title' => 'Dashboard',
             'sapaan' => $sapaan,

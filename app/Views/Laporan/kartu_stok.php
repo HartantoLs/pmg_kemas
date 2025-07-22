@@ -1,7 +1,7 @@
 <?= $this->extend('layout/main') ?>
 
 <?= $this->section('page_css') ?>
-<link href="/css/laporan_kartu_stok.css" rel="stylesheet">
+<link href="<?= base_url('css/laporan_kartu_stok.css') ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
 <?= $this->section('main_content') ?>
@@ -132,5 +132,5 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('page_js') ?>
-<script src="/js/laporan_kartu_stok.js"></script>
+<script src="<?= base_url('js/laporan_kartu_stok.js') ?>"></script>
 <?= $this->endSection() ?>

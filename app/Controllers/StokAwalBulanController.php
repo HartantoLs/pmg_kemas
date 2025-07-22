@@ -8,7 +8,7 @@ use App\Models\GudangModel;
 use App\Models\ProdukModel;
 use CodeIgniter\Controller;
 
-class StokAwalBulanController extends Controller
+class StokAwalBulanController extends BaseController
 {
     protected $stokAwalBulanModel;
     protected $stokModel;

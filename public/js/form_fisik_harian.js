@@ -1,5 +1,5 @@
 ;(($) => {
-  const selfUrl = "/fisik_harian"
+  const selfUrl = `${baseUrl}/fisik_harian`;
 
   // Initialize input change tracking
   function initializeChangeTracking() {

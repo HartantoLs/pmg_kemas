@@ -3,7 +3,7 @@ $(document).ready(() => {
   const modal = $("#editModal")
   const dataTableBody = $("#dataTableBody")
   const loadingState = $("#loadingState")
-  const baseUrl = "/operpack_kerusakan"
+  const selfUrl = `${baseUrl}/operpack_kerusakan`
 
   // Variabel untuk validasi stok
   const stokTersedia = { dus: 0, satuan: 0 }
@@ -21,7 +21,7 @@ $(document).ready(() => {
     dataTableBody.html("")
 
     $.ajax({
-      url: `${baseUrl}/filterriwayat`,
+      url: `${selfUrl}/filterriwayat`,
       type: "POST",
       data: {
         tanggal_mulai: $("#tanggal_mulai").val(),
@@ -89,7 +89,7 @@ $(document).ready(() => {
     btn.html('<i class="fas fa-spinner fa-spin"></i>').prop("disabled", true)
 
     $.post(
-      `${baseUrl}/getdetailriwayat`,
+      `${selfUrl}/getdetailriwayat`,
       { id: id },
       (response) => {
         if (response.success) {
@@ -120,7 +120,7 @@ $(document).ready(() => {
             // Ambil stok jika internal
             const tanggal = data.waktu_diterima.split(" ")[0] // Ambil tanggal saja
             $.post(
-              `${baseUrl}/getstock`,
+              `${selfUrl}/getstock`,
               {
                 produk_id: data.produk_id,
                 gudang_id: data.gudang_asal_id,
@@ -140,7 +140,6 @@ $(document).ready(() => {
               "json",
             )
           } else if (data.kategori_asal === "Eksternal") {
-            // Jika Eksternal, tampilkan info penjualan
             penjualanData = data.penjualan_data
             if (penjualanData) {
               $("#editPenjualanInfo").html(`
@@ -154,7 +153,7 @@ $(document).ready(() => {
             // Reset stok tersedia untuk eksternal
             stokTersedia.dus = 0
             stokTersedia.satuan = 0
-            validateInputs() // Validasi awal
+            validateInputs()
           }
 
           modal.show()
@@ -175,7 +174,7 @@ $(document).ready(() => {
 
     const id = $(this).data("id")
     $.post(
-      `${baseUrl}/hapusriwayat`,
+      `${selfUrl}/hapusriwayat`,
       { id: id },
       (response) => {
         if (response.success) {
@@ -195,7 +194,7 @@ $(document).ready(() => {
     submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop("disabled", true)
 
     $.post(
-      `${baseUrl}/updateriwayat`,
+      `${selfUrl}/updateriwayat`,
       $(this).serialize(),
       (response) => {
         if (response.success) {

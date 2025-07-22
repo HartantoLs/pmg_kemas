@@ -2,7 +2,7 @@ $(document).ready(() => {
   const modal = $("#editModal")
   const dataTableBody = $("#dataTableBody")
   const loadingState = $("#loadingState")
-  const baseUrl = "/operstock"
+  const selfUrl = `${baseUrl}/operstock`
 
   const stokTersediaAsal = { dus: 0, satuan: 0 }
   const stokSaatIniTujuan = { dus: 0, satuan: 0 }
@@ -19,7 +19,7 @@ $(document).ready(() => {
     dataTableBody.html("")
 
     $.ajax({
-      url: `${baseUrl}/filterriwayat`,
+      url: `${selfUrl}/filterriwayat`,
       type: "POST",
       data: {
         tanggal_mulai: $("#tanggal_mulai").val(),
@@ -110,7 +110,7 @@ $(document).ready(() => {
     btn.html('<i class="fas fa-spinner fa-spin"></i>').prop("disabled", true)
 
     $.post(
-      `${baseUrl}/getdetailriwayat`,
+      `${selfUrl}/getdetailriwayat`,
       { id: id },
       (response) => {
         if (response.success) {
@@ -168,7 +168,7 @@ $(document).ready(() => {
     btn.html('<i class="fas fa-spinner fa-spin"></i>').prop("disabled", true)
 
     $.post(
-      `${baseUrl}/hapusriwayat`,
+      `${selfUrl}/hapusriwayat`,
       { id: id },
       (response) => {
         if (response.success) {
@@ -194,7 +194,7 @@ $(document).ready(() => {
     submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop("disabled", true)
 
     $.post(
-      `${baseUrl}/updateriwayat`,
+      `${selfUrl}/updateriwayat`,
       $(this).serialize(),
       (response) => {
         if (response.success) {

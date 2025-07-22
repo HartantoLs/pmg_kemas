@@ -2,7 +2,7 @@
 const $ = window.jQuery
 
 $(document).ready(() => {
-  const baseUrl = window.location.origin
+  const selfUrl = `${baseUrl}/operpack_kemas_ulang`;
   const modal = $("#editModal")
   const loadingState = $("#loadingState")
   const dataTableBody = $("#dataTableBody")
@@ -21,7 +21,7 @@ $(document).ready(() => {
       produk_id: $("#produk_id").val(),
     }
 
-    $.post(baseUrl + "/operpack_kemas_ulang/filter-data", formData)
+    $.post(selfUrl + "/filter-data", formData)
       .done((response) => {
         dataTableBody.html(response)
         updateRowCount()
@@ -80,7 +80,7 @@ $(document).ready(() => {
     if (!id) return alert("ID tidak ditemukan!")
 
     $.post(
-      baseUrl + "/operpack_kemas_ulang/get-detail",
+      selfUrl + "/get-detail",
       { id: id },
       (response) => {
         if (response.success && response.data) {
@@ -114,7 +114,7 @@ $(document).ready(() => {
     btn.html('<i class="fas fa-spinner fa-spin"></i>').prop("disabled", true)
 
     $.post(
-      baseUrl + "/operpack_kemas_ulang/delete-kemas-ulang",
+      selfUrl + "/delete-kemas-ulang",
       { id: id },
       (response) => {
         if (response.success) {
@@ -142,7 +142,7 @@ $(document).ready(() => {
     submitBtn.html('<i class="fas fa-spinner fa-spin"></i> Menyimpan...').prop("disabled", true)
 
     $.post(
-      baseUrl + "/operpack_kemas_ulang/update-kemas-ulang",
+      selfUrl + "/update-kemas-ulang",
       $(this).serialize(),
       (response) => {
         if (response.success) {
